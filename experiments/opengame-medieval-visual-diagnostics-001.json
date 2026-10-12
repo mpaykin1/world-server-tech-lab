@@ -1,0 +1,40 @@
+{
+  "id": "opengame-medieval-visual-diagnostics-001",
+  "objective": "Apply OpenGame Debug Skill-inspired read-only checks to real medieval v3 and v4 ZIP assets, map keys and transition layout; no engine changes.",
+  "upstream": {
+    "url": "https://github.com/leigest519/OpenGame",
+    "sha": "c9bea37786af524bf3bbe802f2b67d23816fa5c0",
+    "code_license": "Apache-2.0, independently written diagnostic; no code copied",
+    "asset_license": "No upstream assets copied"
+  },
+  "baseline": {
+    "world_server_sha": "b57ea51237e8e449ba19dc935ec34eebee1b2f74",
+    "fps_desktop": null,
+    "fps_iphone11": null,
+    "memory_mb": null,
+    "reference_image": "ChatGPT Library /World Server/Graphics Reference/target_pixel_art_reference_2026-10-10.png",
+    "input_archive": "ChatGPT Library /World Server/Graphics Reference/medieval_world_infinite_pack_v3.zip",
+    "input_sha256": "480730ac2fbfe97566b9452568bd5e2e8c69b72938f6db4cc06447c44f09fd0d"
+  },
+  "measurement": {
+    "screenshot_comparison_report": null,
+    "fps_desktop": null,
+    "fps_iphone11": null,
+    "user_visibility_percent": null,
+    "visibility_evidence": null,
+    "reproducible_test_command": "python scripts/opengame_medieval_preflight.py <path-to-authorized-zip>",
+    "test_result": "Real v3/v4 ZIP static diagnostic pass; tile composition unchanged; quality unknown.",
+    "v3_report": "evidence/opengame-medieval-v3.json",
+    "v4_report": "evidence/opengame-medieval-v4.json"
+  },
+  "integration": {
+    "branch": "ai/chatgpt/live-status-opengame-v1",
+    "pull_request": null,
+    "new_active_tails": 0,
+    "clean_server_regression": null
+  },
+  "status": "EXPERIMENTING",
+  "user_decision": null,
+  "user_decision_source": null,
+  "analysis_commit": null
+}

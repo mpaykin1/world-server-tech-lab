@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checkpoint": 1,
-  "updated_at_utc": "2026-10-12T13:56:00Z",
-  "phase": "RECOVERY_INFRASTRUCTURE",
+  "checkpoint": 2,
+  "updated_at_utc": "2026-10-12T14:08:00Z",
+  "phase": "EXPERIMENTING",
   "baseline": {
     "lab_main_sha": "646bc53cb2319ccbdc3451b2616f7e914805d04d",
     "world_master_sha": "b57ea51237e8e449ba19dc935ec34eebee1b2f74",
@@ -16,12 +16,14 @@
     "new_scheduled_jobs": 0
   },
   "blockers": [
-    "No measured medieval graphics fidelity or >85% user visibility",
-    "OpenGame has not been executed against real medieval asset pack",
-    "World Server integration PR not yet reviewed"
+    "Map grid/layout unchanged v3 to v4; 52x28, 346 tile transitions, 16 row/46 column border mismatches",
+    "Visual similarity, user visibility >85%, mobile FPS and playable delivery not measured",
+    "World Server AI_START_HERE.md integration PR not merged"
   ],
-  "active_experiments": [],
-  "next_action": "Validate recovery gates, then run isolated OpenGame-inspired medieval asset and tile preflight; prepare documentation-only World Server integration PR.",
+  "active_experiments": [
+    "opengame-medieval-visual-diagnostics-001"
+  ],
+  "next_action": "Run CI/review Tech Lab PR, then prepare documentation-only World Server bootstrap PR; next graphics change must visibly alter original game's land transitions with real before/after screenshots.",
   "owner_decision": null,
   "links": {
     "main_project": "https://github.com/mpaykin1/World_server",

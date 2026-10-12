@@ -37,3 +37,11 @@ python -m unittest discover -s tests -v
 [GitHub Actions](../../actions) выполняет их при изменениях без почасового расписания.
 
 **Текущий этап: BOOTSTRAP.** Создана только лабораторная инфраструктура и проверки. Готового игрового MVP, подтверждённого прироста качества или установленного OpenGame/Project Orbit пока нет.
+
+## Resume state (canonical Tech Lab entrypoint)
+
+Always read [LIVE_STATUS.json](LIVE_STATUS.json) and [the compact checkpoint history](checkpoints/history.jsonl) first, then refresh GitHub exact HEAD/PR/CI. Do not replay long chat logs.
+
+After **material changes**, run `python scripts/checkpoint.py --event IMPLEMENTED --evidence experiments/<id>.json --phase EXPERIMENTING --next-action "..." --active-experiment <id> --blocker "..."`. Commit `LIVE_STATUS.json` and `checkpoints/history.jsonl` **with** the material change. The existing GitHub Actions checks `python scripts/check_status.py --changes`; no scheduler, no extra hourly role. Staleness >14 days is reported at the next CI run, not by polling.
+
+The first OpenGame-inspired experiment is [opengame-medieval-visual-diagnostics-001](experiments/opengame-medieval-visual-diagnostics-001.json). Reproduce without internet or extra packages using `python scripts/opengame_medieval_preflight.py PATH_TO_AUTHORIZED_ZIP`. Real archive inputs are in ChatGPT Library `/World Server/Graphics Reference/`, not duplicated into GitHub. Evidence is in [v3](evidence/opengame-medieval-v3.json) / [v4](evidence/opengame-medieval-v4.json). This is read-only, not a claim of visual readiness.
