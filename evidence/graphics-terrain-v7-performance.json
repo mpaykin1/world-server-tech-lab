@@ -1,0 +1,111 @@
+{
+  "method": "3 repeat local Chromium runs; DrawWorld CPU wall-clock instrumentation after 8 warmup samples; no real iPhone test; emulator not physical device",
+  "runs": [
+    {
+      "mode": "desktop",
+      "version": "v6",
+      "runs": [
+        {
+          "ms": 1.273,
+          "fps": 59,
+          "assets": 40,
+          "errors": []
+        },
+        {
+          "ms": 1.204,
+          "fps": 60,
+          "assets": 40,
+          "errors": []
+        },
+        {
+          "ms": 1.162,
+          "fps": 60,
+          "assets": 40,
+          "errors": []
+        }
+      ],
+      "mean_render_ms": 1.213,
+      "min_fps": 59
+    },
+    {
+      "mode": "desktop",
+      "version": "v7",
+      "runs": [
+        {
+          "ms": 1.242,
+          "fps": 60,
+          "assets": 42,
+          "errors": []
+        },
+        {
+          "ms": 1.387,
+          "fps": 85,
+          "assets": 42,
+          "errors": []
+        },
+        {
+          "ms": 1.15,
+          "fps": 73,
+          "assets": 42,
+          "errors": []
+        }
+      ],
+      "mean_render_ms": 1.26,
+      "min_fps": 60
+    },
+    {
+      "mode": "mobile-emulated",
+      "version": "v6",
+      "runs": [
+        {
+          "ms": 0.715,
+          "fps": 60,
+          "assets": 40,
+          "errors": []
+        },
+        {
+          "ms": 0.727,
+          "fps": 218,
+          "assets": 40,
+          "errors": []
+        },
+        {
+          "ms": 0.737,
+          "fps": 66,
+          "assets": 40,
+          "errors": []
+        }
+      ],
+      "mean_render_ms": 0.726,
+      "min_fps": 60
+    },
+    {
+      "mode": "mobile-emulated",
+      "version": "v7",
+      "runs": [
+        {
+          "ms": 0.746,
+          "fps": 61,
+          "assets": 42,
+          "errors": []
+        },
+        {
+          "ms": 0.74,
+          "fps": 60,
+          "assets": 42,
+          "errors": []
+        },
+        {
+          "ms": 0.783,
+          "fps": 60,
+          "assets": 42,
+          "errors": []
+        }
+      ],
+      "mean_render_ms": 0.756,
+      "min_fps": 60
+    }
+  ],
+  "user_visibility_percent": null,
+  "owner_pass_fail": null
+}
