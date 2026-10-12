@@ -1,0 +1,36 @@
+{
+  "id": "example-replace-me",
+  "objective": "One measurable capability, not a complete new engine",
+  "upstream": {
+    "url": null,
+    "sha": null,
+    "code_license": null,
+    "asset_license": null
+  },
+  "baseline": {
+    "world_server_sha": null,
+    "fps_desktop": null,
+    "fps_iphone11": null,
+    "memory_mb": null,
+    "reference_image": null
+  },
+  "measurement": {
+    "screenshot_comparison_report": null,
+    "fps_desktop": null,
+    "fps_iphone11": null,
+    "user_visibility_percent": null,
+    "visibility_evidence": null,
+    "reproducible_test_command": null,
+    "test_result": null
+  },
+  "integration": {
+    "branch": null,
+    "pull_request": null,
+    "new_active_tails": 0,
+    "clean_server_regression": null
+  },
+  "status": "NOT_TESTED",
+  "user_decision": null,
+  "user_decision_source": null,
+  "analysis_commit": null
+}
