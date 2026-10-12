@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "checkpoint": 1,
+  "updated_at_utc": "2026-10-12T13:56:00Z",
+  "phase": "RECOVERY_INFRASTRUCTURE",
+  "baseline": {
+    "lab_main_sha": "646bc53cb2319ccbdc3451b2616f7e914805d04d",
+    "world_master_sha": "b57ea51237e8e449ba19dc935ec34eebee1b2f74",
+    "upstream_opengame_sha": "c9bea37786af524bf3bbe802f2b67d23816fa5c0"
+  },
+  "lane_policy": {
+    "GRAPHICS": 50,
+    "CLEAN_SERVER": 50,
+    "actual_productive_split": "UNMEASURED",
+    "world_server_runtime_changes": false,
+    "new_scheduled_jobs": 0
+  },
+  "blockers": [
+    "No measured medieval graphics fidelity or >85% user visibility",
+    "OpenGame has not been executed against real medieval asset pack",
+    "World Server integration PR not yet reviewed"
+  ],
+  "active_experiments": [],
+  "next_action": "Validate recovery gates, then run isolated OpenGame-inspired medieval asset and tile preflight; prepare documentation-only World Server integration PR.",
+  "owner_decision": null,
+  "links": {
+    "main_project": "https://github.com/mpaykin1/World_server",
+    "issue_80": "https://github.com/mpaykin1/World_server/issues/80",
+    "lab": "https://github.com/mpaykin1/world-server-tech-lab"
+  }
+}
