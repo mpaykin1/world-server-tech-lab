@@ -1,0 +1,44 @@
+{
+  "id": "graphics-terrain-v6",
+  "objective": "Improve actual medieval V5 surface tile variety/fidelity without a new engine; concurrently preserve CLEAN_SERVER independent review hard-gates.",
+  "upstream": {
+    "url": "https://github.com/leigest519/OpenGame",
+    "sha": "c9bea37786af524bf3bbe802f2b67d23816fa5c0",
+    "code_license": "Apache-2.0 concepts only, no upstream source imported",
+    "asset_license": "Derived from original user's v5 sprites, no third-party assets imported"
+  },
+  "baseline": {
+    "world_server_sha": "754e97829c2dae88424904cafbf44c50ab6b688d",
+    "parent_experiment": "graphics-terrain-v5",
+    "reference_image": "ChatGPT Library /World Server/Graphics Reference/target_pixel_art_reference_2026-10-10.png",
+    "source_archive": "ChatGPT Library /World Server/Graphics Reference/GRAPHICS-DEMO-001-playable-sandbox-v5.zip",
+    "fps_desktop": 60,
+    "fps_iphone11": null,
+    "memory_mb": null
+  },
+  "measurement": {
+    "screenshot_comparison_report": "evidence/graphics-terrain-v6.json",
+    "fps_desktop": 60,
+    "fps_iphone11": null,
+    "user_visibility_percent": null,
+    "visibility_evidence": null,
+    "reproducible_test_command": "python scripts/terrain_v6_upgrade.py <unzipped-v5-root> && python <root>/tools/test_graphics_v6.py && node --check <root>/graphics-enhancement.js",
+    "test_result": "LOCAL_DESKTOP+EMULATED_MOBILE_CHROMIUM_PASS; 40/40 sprites; CSS/game engine not replaced. V6 visual target score UNKNOWN.",
+    "atlas_sha256": "933f33c465ca18359a1b62198e9762a1be4c17e6b717f876908d214758b3ff69",
+    "improvement_note": "Saturation increased in fixed viewport; color entropy slightly declined; target still visibly richer in cliffs, water edges, large-scale composition. Do not claim >85%."
+  },
+  "integration": {
+    "branch": "ai/chatgpt/medieval-v6-materials",
+    "pull_request": null,
+    "new_active_tails": 0,
+    "clean_server_regression": null,
+    "world_server_runtime_changed": false,
+    "output_library_path": "/World Server/Graphics Reference/GRAPHICS-DEMO-001-playable-sandbox-v6.zip",
+    "output_library_file_id": "libfile_3f9042fc6aa0819183083d19d2b0fa22",
+    "output_sha256": "dd011f5b7d0a84c33785c67af2f1e2527efea229188bb69e7fb0696050f944df"
+  },
+  "status": "EXPERIMENTING",
+  "user_decision": null,
+  "user_decision_source": null,
+  "analysis_commit": null
+}
