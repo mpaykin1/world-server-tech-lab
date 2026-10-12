@@ -31,7 +31,9 @@
     "branch": "ai/chatgpt/live-status-opengame-v1",
     "pull_request": "https://github.com/mpaykin1/world-server-tech-lab/pull/2",
     "new_active_tails": 0,
-    "clean_server_regression": null
+    "clean_server_regression": null,
+    "world_bootstrap_pr": "https://github.com/mpaykin1/World_server/pull/498",
+    "world_bootstrap_status": "CLOSED_UNMERGED_CAPACITY_3_OF_3"
   },
   "status": "EXPERIMENTING",
   "user_decision": null,
