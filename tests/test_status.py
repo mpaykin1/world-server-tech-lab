@@ -10,7 +10,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 class ResumeTests(unittest.TestCase):
     def setUp(self):
-        self.now = dt.datetime(2026, 10, 12, 14, 0, tzinfo=dt.timezone.utc)
+        self.now = dt.datetime.now(dt.timezone.utc)
 
     def test_current_checkpoint(self):
         self.assertEqual(validate(now=self.now), [])
