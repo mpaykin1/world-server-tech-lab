@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "candidates": [
+    {
+      "id": "opengame",
+      "url": "https://github.com/leigest519/OpenGame",
+      "purpose": "agentic browser game generation, template reuse and debugging",
+      "license_verified": false,
+      "upstream_sha": null,
+      "status": "RESEARCH_ONLY"
+    },
+    {
+      "id": "game-prompt-engine",
+      "url": "https://github.com/BeyondPlay-AI/game-prompt-engine",
+      "purpose": "HTML5 mechanics prototyping",
+      "license_verified": false,
+      "upstream_sha": null,
+      "status": "RESEARCH_ONLY"
+    },
+    {
+      "id": "project-orbit",
+      "url": "https://github.com/Tarachand-Gupta/project-orbit",
+      "purpose": "natural language 3D object and physics prototypes",
+      "license_verified": false,
+      "upstream_sha": null,
+      "status": "RESEARCH_ONLY"
+    },
+    {
+      "id": "phaser",
+      "url": "https://github.com/phaserjs/phaser",
+      "purpose": "tile, particle, 2D/2.5D graphics evaluation",
+      "license_verified": false,
+      "upstream_sha": null,
+      "status": "RESEARCH_ONLY"
+    }
+  ]
+}
