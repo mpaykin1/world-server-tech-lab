@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "checkpoint": 7,
-  "updated_at_utc": "2026-10-12T16:43:21Z",
+  "checkpoint": 8,
+  "updated_at_utc": "2026-10-12T16:44:26Z",
   "phase": "EXPERIMENTING",
   "baseline": {
     "lab_main_sha": "0ed7ec4613c982ffecda5c833e6b5830f0c5b616",

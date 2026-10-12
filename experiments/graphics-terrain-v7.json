@@ -42,5 +42,8 @@
     "CLEAN_SERVER": 50,
     "actual_productive_minutes": "NOT_MEASURED",
     "new_automations": 0
-  }
+  },
+  "status": "EXPERIMENTING",
+  "user_decision_source": null,
+  "analysis_commit": null
 }
