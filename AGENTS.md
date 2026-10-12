@@ -10,3 +10,7 @@
 - После тестов пользователь сам решает PASS/FAIL. До решения `user_decision = null`.
 - Лаборатория — поставщик проверенных модулей; World Server — единственный runtime/production.
 - Зафиксируй точный SHA, команду проверки и доказательства. Не объявляй % без измеренного evidence.
+
+## Recovery
+
+Start at [LIVE_STATUS.json](LIVE_STATUS.json), validate exact GitHub state and last checkpoint. Each material experiment/catalog edit must include status + history in the same commit. No synthetic owner PASS/FAIL, new hourly task or engine replacement.
