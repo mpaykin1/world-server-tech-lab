@@ -1,0 +1,46 @@
+{
+  "id": "graphics-terrain-v7",
+  "input": "user-owned original existing V6 medieval demo, not a new engine",
+  "upstream": "OpenGame inspiration only, no upstream code/assets copied; own source/game sprites; v6 baseline from user Library",
+  "assets": [
+    "assets/objects/tree_round_v7.png",
+    "assets/objects/tree_pine_v7.png",
+    "assets/objects/rock_big_v7.png",
+    "assets/tiles/shoreline_shapes_v7.png",
+    "assets/tiles/cliff_outcrops_v7.png"
+  ],
+  "asset_binary_location": "inside full Library V7 ZIP; reproducible via scripts/terrain_v7_upgrade.py using Pillow",
+  "output_zip_sha256": "296b778bda35f203079933b1a6ae41f293c433e5b6933d9afb8b944b08114622",
+  "output_zip_library_file_id": "libfile_2bf3ce95a7348191b16354e6edbe588f",
+  "output_zip_library_path": "/World Server/Graphics Reference/GRAPHICS-DEMO-001-playable-sandbox-v7.zip",
+  "source_pack_tests": "original test_pack, V4, V5, V6 and V7 regression PASS; Node --check PASS; same 52x28 map SHA; original blockedTiles and movement unchanged",
+  "chromium_smoke": {
+    "v7_loaded": 42,
+    "v7_total": 42,
+    "keyboard_movement_delta_px": 28.3,
+    "js_errors": [],
+    "fps_approx": 60
+  },
+  "reference_analysis": "evidence/graphics-terrain-v7-reference.json",
+  "browser_performance": "evidence/graphics-terrain-v7-performance.json",
+  "independent_graphics_quality_pass": false,
+  "reference_similarity_percent": null,
+  "user_visibility_percent": null,
+  "real_iphone11_test": null,
+  "owner_decision": null,
+  "clean_server": {
+    "world_pr": 491,
+    "head_sha": "5f9cbb9356541dc15ecd444c906f7cc512b80a8c",
+    "test_added": "test/independent-review-context.test.js",
+    "reproduced_claim": "exact-source imported preflightPatch exists, is exported and invoked without ReferenceError",
+    "exact_head_ci": "PASS core/Fleet PRE/quality",
+    "exact_head_independent_review": "INCONCLUSIVE, google/nvidia HTTP 429, never a PASS",
+    "existing_pr_only": true
+  },
+  "lane_policy": {
+    "GRAPHICS": 50,
+    "CLEAN_SERVER": 50,
+    "actual_productive_minutes": "NOT_MEASURED",
+    "new_automations": 0
+  }
+}

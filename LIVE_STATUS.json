@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "checkpoint": 6,
-  "updated_at_utc": "2026-10-12T16:19:17Z",
+  "checkpoint": 7,
+  "updated_at_utc": "2026-10-12T16:43:21Z",
   "phase": "EXPERIMENTING",
   "baseline": {
-    "lab_main_sha": "35948e102418c65ddd92c26b50089396cbebe25c",
+    "lab_main_sha": "0ed7ec4613c982ffecda5c833e6b5830f0c5b616",
     "world_master_sha": "754e97829c2dae88424904cafbf44c50ab6b688d",
     "upstream_opengame_sha": "c9bea37786af524bf3bbe802f2b67d23816fa5c0"
   },
@@ -16,15 +16,15 @@
     "new_scheduled_jobs": 0
   },
   "blockers": [
-    "V6 color/texture metrics remain far from owner reference; semantic/reference fidelity and user visibility >85% UNKNOWN",
-    "Real iPhone 11 not tested; mobile Chromium emulator is not device evidence",
-    "World Server independent review remains BLOCK on PR #491/#496/#379; never weaken or bypass independent gate",
-    "No stable deployed playable V6 URL, only versioned full ZIP in persistent Library"
+    "V7 shape atlas improves tree/rock/shore silhouettes but visual quality remains below owner target; exact reference similarity and >85% user visibility remain UNMEASURED.",
+    "Desktop Chromium and emulated mobile render timings are not physical iPhone 11 evidence; render cost v7 modestly above v6 in short runs, optimize if reproducible.",
+    "World Server #491 still unmerged: exact-head independent review INCONCLUSIVE on HTTP 429 (not PASS); #496/#379 remain BLOCK. Protected gates must not be bypassed.",
+    "V7 is a full user-owned ZIP in Library and reproducible Lab source, not a publicly deployed or released production game."
   ],
   "active_experiments": [
-    "graphics-terrain-v6"
+    "graphics-terrain-v7"
   ],
-  "next_action": "After Tech Lab exact-head CI PASS, compare real saved v5/v6 Chromium frames to the owner's target and improve large-scale cliffs/trees/roads (not just pixel palette). In CLEAN_SERVER follow existing #491 exact-head review/tests and repair proven defects in same PR; preserve 50/50 productive effort, owner verdict null.",
+  "next_action": "GRAPHICS: assess actual v7 shapes vs owner image at matched composition; improve architectural cliffs, water, bridge and scene layout, monitor render cost and real iPhone11. CLEAN_SERVER: retain #491 same branch and reproduce any substantive new reviewer claim only after free provider capacity returns (no identical retries), resolve #496/#379 independently without bypass. Record actual 50/50 productive minutes honestly; owner PASS/FAIL UNSET.",
   "owner_decision": null,
   "links": {
     "main_project": "https://github.com/mpaykin1/World_server",
@@ -37,6 +37,10 @@
     "world_bootstrap_merged": "https://github.com/mpaykin1/World_server/commit/754e97829c2dae88424904cafbf44c50ab6b688d",
     "terrain_v6_artifact_library": "/World Server/Graphics Reference/GRAPHICS-DEMO-001-playable-sandbox-v6.zip",
     "terrain_v6_v5_frame_library": "/World Server/Graphics Reference/GRAPHICS-DEMO-001-v5-reference-comparison-frame.png",
-    "terrain_v6_v6_frame_library": "/World Server/Graphics Reference/GRAPHICS-DEMO-001-v6-reference-comparison-frame.png"
+    "terrain_v6_v6_frame_library": "/World Server/Graphics Reference/GRAPHICS-DEMO-001-v6-reference-comparison-frame.png",
+    "terrain_v7_artifact_library": "/World Server/Graphics Reference/GRAPHICS-DEMO-001-playable-sandbox-v7.zip",
+    "terrain_v7_source": "https://github.com/mpaykin1/world-server-tech-lab/blob/main/scripts/terrain_v7_upgrade.py",
+    "terrain_v7_frame_library": "/World Server/Graphics Reference/GRAPHICS-DEMO-001-v7-frame.png",
+    "clean_491_reproduction": "https://github.com/mpaykin1/World_server/pull/491#issuecomment-6128555573"
   }
 }

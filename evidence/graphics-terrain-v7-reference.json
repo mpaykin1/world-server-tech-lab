@@ -1,0 +1,25 @@
+{
+  "source_map_hash_unchanged": true,
+  "v6_v7_changed_pixels_gte24_per_channel": 177515,
+  "total_pixels": 884736,
+  "changed_fraction": 0.2006,
+  "color_metrics": {
+    "v6": {
+      "entropy_16bins": 6.402,
+      "saturation": 0.469
+    },
+    "v7": {
+      "entropy_16bins": 6.627,
+      "saturation": 0.453
+    },
+    "owner_reference": {
+      "entropy_16bins": 7.801,
+      "saturation": 0.538
+    }
+  },
+  "reference_similarity_percent": null,
+  "owner_visibility_percent": null,
+  "physical_iphone11_proof": null,
+  "user_pass_fail": null,
+  "disclaimer": "A change in pixels or color entropy does not equal quality gain; capture animation variation and different compositions prevent image-similarity claims."
+}
