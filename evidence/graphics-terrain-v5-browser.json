@@ -1,0 +1,54 @@
+{
+  "engine": "Chromium headless / Playwright; locally inlined original images because HTTP localhost ERR_BLOCKED_BY_ADMINISTRATOR in sandbox",
+  "viewport": [
+    1200,
+    780
+  ],
+  "source_versions": [
+    "v4",
+    "v5"
+  ],
+  "map_shape": [
+    52,
+    28
+  ],
+  "recorded_at_utc": "2026-10-12T14:43:35Z",
+  "comparison_note": "Different captured animation phases possible; changed pixel count proves rendered change, not positive image fidelity or acceptance.",
+  "pixels_changed": 291502,
+  "pixels_total": 936000,
+  "fraction_changed": 0.3114,
+  "v4": {
+    "revision": "graphics-demo-001-sandbox-v4",
+    "fps_smoke": 69,
+    "loaded": 38,
+    "total": 38,
+    "movement_px": 33.99,
+    "js_errors": []
+  },
+  "v5": {
+    "revision": "graphics-demo-001-sandbox-v5",
+    "fps_smoke": 60,
+    "loaded": 39,
+    "total": 39,
+    "movement_px": 35.14,
+    "js_errors": [],
+    "authoredTileTransitionsLoaded": true
+  },
+  "invariants": {
+    "old_game_engine_untouched": true,
+    "source_map_52x28_preserved": true,
+    "hero_and_keyboard_work": true,
+    "blocked_tile_mutations": 0,
+    "tile_variants_authored": 45,
+    "visible_map_cells_edited": 18,
+    "real_3d_geometry_added": false,
+    "infinite_map_proved": false
+  },
+  "reference_similarity_percent": null,
+  "user_visibility_percent": null,
+  "owner_pass_fail": null,
+  "link_gate": "BLOCKED_VISIBILITY_NOT_MEASURED",
+  "source_zip_sha256": "1032363f5a4d8071386b73b5c6530b58b87d3334d72b8b43e7ada1a588f621a6",
+  "output_zip_sha256": "19d382484984858ad8c896ca030eeb65b2a8892a2dd6379d6e3d240b5d491125",
+  "artifact_library_file_id": "libfile_e2e5ac5a81a481918346e456e2bb984c"
+}
