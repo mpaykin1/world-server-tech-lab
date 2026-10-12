@@ -29,7 +29,7 @@
   },
   "integration": {
     "branch": "ai/chatgpt/live-status-opengame-v1",
-    "pull_request": null,
+    "pull_request": "https://github.com/mpaykin1/world-server-tech-lab/pull/2",
     "new_active_tails": 0,
     "clean_server_regression": null
   },
