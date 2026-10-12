@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "checkpoint": 4,
-  "updated_at_utc": "2026-10-12T14:12:02Z",
-  "phase": "PAUSED",
+  "checkpoint": 5,
+  "updated_at_utc": "2026-10-12T14:43:35Z",
+  "phase": "EXPERIMENTING",
   "baseline": {
-    "lab_main_sha": "646bc53cb2319ccbdc3451b2616f7e914805d04d",
-    "world_master_sha": "b57ea51237e8e449ba19dc935ec34eebee1b2f74",
+    "lab_main_sha": "cfbe90e68a0da14f3518bac84cb18a84e82fa63a",
+    "world_master_sha": "754e97829c2dae88424904cafbf44c50ab6b688d",
     "upstream_opengame_sha": "c9bea37786af524bf3bbe802f2b67d23816fa5c0"
   },
   "lane_policy": {
@@ -16,20 +16,24 @@
     "new_scheduled_jobs": 0
   },
   "blockers": [
-    "World Server ACTIVE PR capacity=3/3 (#496, #491, #379); docs-only PR #498 was closed unmerged by tail-closure. DO NOT reopen or duplicate until slot safely freed.",
-    "OpenGame-inspired asset preflight completed only; map structure v3/v4 identical. Visual improvement remains unimplemented.",
-    "No screenshot similarity or user visibility >85% evidence; no playable test link authorized."
+    "Reference visual fidelity and user visibility >85% NOT_MEASURED; screenshots only prove pixel delta, not quality",
+    "iPhone 11 real-device FPS/interaction unverified; browser chromium desktop smoke 60 FPS (V4 observed 69 FPS; not a robust performance comparison)",
+    "V5 is an isolated original-demo ZIP in Library, not deployed or integrated into World Server runtime",
+    "World Server #496/#491/#379 remain active with independent review BLOCK; CLEAN_SERVER not PASS"
   ],
   "active_experiments": [
-    "opengame-medieval-visual-diagnostics-001"
+    "graphics-terrain-v5"
   ],
-  "next_action": "First check World Server issue #80/tail budget and open PRs. Only after one slot frees, reopen or reintroduce exact one-file AI_START_HERE.md change from closed PR #498 (commit c0b922e29359dd98da67bfa935d5fa74f6e73d61), then pass fresh World CI/independent Fleet/review. Independently continue REAL medieval graphics tile improvements with separate owned sandbox; user verdict still UNSET.",
+  "next_action": "Use saved real V5 ZIP and source scripts to benchmark v5 against the exact user target image at same camera; fix any fidelity/performance regressions, test mobile/iPhone 11, and only if independently evidenced >85% user visibility supply stable runnable test link. Preserve 50/50 productive GRAPHICS/CLEAN_SERVER and protected World PR gates.",
   "owner_decision": null,
   "links": {
     "main_project": "https://github.com/mpaykin1/World_server",
     "issue_80": "https://github.com/mpaykin1/World_server/issues/80",
     "lab": "https://github.com/mpaykin1/world-server-tech-lab",
     "world_bootstrap_pr": "https://github.com/mpaykin1/World_server/pull/498",
-    "lab_recovery_pr": "https://github.com/mpaykin1/world-server-tech-lab/pull/2"
+    "lab_recovery_pr": "https://github.com/mpaykin1/world-server-tech-lab/pull/2",
+    "terrain_v5_artifact_library": "/World Server/Graphics Reference/GRAPHICS-DEMO-001-playable-sandbox-v5.zip",
+    "terrain_v5_source_pr": "https://github.com/mpaykin1/world-server-tech-lab/pulls",
+    "world_bootstrap_merged": "https://github.com/mpaykin1/World_server/commit/754e97829c2dae88424904cafbf44c50ab6b688d"
   }
 }

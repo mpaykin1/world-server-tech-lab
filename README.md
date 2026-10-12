@@ -45,3 +45,11 @@ Always read [LIVE_STATUS.json](LIVE_STATUS.json) and [the compact checkpoint his
 After **material changes**, run `python scripts/checkpoint.py --event IMPLEMENTED --evidence experiments/<id>.json --phase EXPERIMENTING --next-action "..." --active-experiment <id> --blocker "..."`. Commit `LIVE_STATUS.json` and `checkpoints/history.jsonl` **with** the material change. The existing GitHub Actions checks `python scripts/check_status.py --changes`; no scheduler, no extra hourly role. Staleness >14 days is reported at the next CI run, not by polling.
 
 The first OpenGame-inspired experiment is [opengame-medieval-visual-diagnostics-001](experiments/opengame-medieval-visual-diagnostics-001.json). Reproduce without internet or extra packages using `python scripts/opengame_medieval_preflight.py PATH_TO_AUTHORIZED_ZIP`. Real archive inputs are in ChatGPT Library `/World Server/Graphics Reference/`, not duplicated into GitHub. Evidence is in [v3](evidence/opengame-medieval-v3.json) / [v4](evidence/opengame-medieval-v4.json). This is read-only, not a claim of visual readiness.
+
+## Latest real medieval terrain experiment (V5, separate from production)
+
+[Experiment](experiments/graphics-terrain-v5.json) · [measured local Chromium smoke](evidence/graphics-terrain-v5-browser.json) · [offline reproduction script](scripts/terrain_v5_upgrade.py) · [authored 45-variant PNG atlas](artifacts/terrain_transitions_v5.png).
+
+The source V4 and the new full playable V5 ZIP are in ChatGPT Library `/World Server/Graphics Reference/`. Exact V5 SHA256 `19d382484984858ad8c896ca030eeb65b2a8892a2dd6379d6e3d240b5d491125`; never substitute a synthetic preview. The **same original** 52×28 map was modified on 18 non-blocking cells, 45 border overlays are genuine authored pixel assets rendered by the existing canvas engine. Headless Chromium loaded 39/39 assets and preserved keyboard movement. The pixel-delta fraction 0.3114 means visual change, NOT 31% improvement; reference fidelity/owner verdict remain UNKNOWN. The lab keeps code/evidence, not another production runtime.
+
+To rebuild locally, extract authorized V4 ZIP; run `python scripts/terrain_v5_upgrade.py path/to/medieval_world_infinite_pack_v3` with Pillow installed. No network/API/GPU necessary. Follow V4/V5 pack tests and browser smoke; compare actual reference before any >=85% visibility claim.
