@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "checkpoint": 5,
-  "updated_at_utc": "2026-10-12T14:43:35Z",
+  "checkpoint": 6,
+  "updated_at_utc": "2026-10-12T16:19:17Z",
   "phase": "EXPERIMENTING",
   "baseline": {
-    "lab_main_sha": "cfbe90e68a0da14f3518bac84cb18a84e82fa63a",
+    "lab_main_sha": "35948e102418c65ddd92c26b50089396cbebe25c",
     "world_master_sha": "754e97829c2dae88424904cafbf44c50ab6b688d",
     "upstream_opengame_sha": "c9bea37786af524bf3bbe802f2b67d23816fa5c0"
   },
@@ -16,15 +16,15 @@
     "new_scheduled_jobs": 0
   },
   "blockers": [
-    "Reference visual fidelity and user visibility >85% NOT_MEASURED; screenshots only prove pixel delta, not quality",
-    "iPhone 11 real-device FPS/interaction unverified; browser chromium desktop smoke 60 FPS (V4 observed 69 FPS; not a robust performance comparison)",
-    "V5 is an isolated original-demo ZIP in Library, not deployed or integrated into World Server runtime",
-    "World Server #496/#491/#379 remain active with independent review BLOCK; CLEAN_SERVER not PASS"
+    "V6 color/texture metrics remain far from owner reference; semantic/reference fidelity and user visibility >85% UNKNOWN",
+    "Real iPhone 11 not tested; mobile Chromium emulator is not device evidence",
+    "World Server independent review remains BLOCK on PR #491/#496/#379; never weaken or bypass independent gate",
+    "No stable deployed playable V6 URL, only versioned full ZIP in persistent Library"
   ],
   "active_experiments": [
-    "graphics-terrain-v5"
+    "graphics-terrain-v6"
   ],
-  "next_action": "Use saved real V5 ZIP and source scripts to benchmark v5 against the exact user target image at same camera; fix any fidelity/performance regressions, test mobile/iPhone 11, and only if independently evidenced >85% user visibility supply stable runnable test link. Preserve 50/50 productive GRAPHICS/CLEAN_SERVER and protected World PR gates.",
+  "next_action": "After Tech Lab exact-head CI PASS, compare real saved v5/v6 Chromium frames to the owner's target and improve large-scale cliffs/trees/roads (not just pixel palette). In CLEAN_SERVER follow existing #491 exact-head review/tests and repair proven defects in same PR; preserve 50/50 productive effort, owner verdict null.",
   "owner_decision": null,
   "links": {
     "main_project": "https://github.com/mpaykin1/World_server",
@@ -34,6 +34,9 @@
     "lab_recovery_pr": "https://github.com/mpaykin1/world-server-tech-lab/pull/2",
     "terrain_v5_artifact_library": "/World Server/Graphics Reference/GRAPHICS-DEMO-001-playable-sandbox-v5.zip",
     "terrain_v5_source_pr": "https://github.com/mpaykin1/world-server-tech-lab/pulls",
-    "world_bootstrap_merged": "https://github.com/mpaykin1/World_server/commit/754e97829c2dae88424904cafbf44c50ab6b688d"
+    "world_bootstrap_merged": "https://github.com/mpaykin1/World_server/commit/754e97829c2dae88424904cafbf44c50ab6b688d",
+    "terrain_v6_artifact_library": "/World Server/Graphics Reference/GRAPHICS-DEMO-001-playable-sandbox-v6.zip",
+    "terrain_v6_v5_frame_library": "/World Server/Graphics Reference/GRAPHICS-DEMO-001-v5-reference-comparison-frame.png",
+    "terrain_v6_v6_frame_library": "/World Server/Graphics Reference/GRAPHICS-DEMO-001-v6-reference-comparison-frame.png"
   }
 }
