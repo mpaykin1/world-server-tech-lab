@@ -133,6 +133,28 @@
       },
       "evidence": "experiments/graphics-terrain-v8.json",
       "next": "Edit existing game, never replace runtime with a new engine."
+    },
+    {
+      "id": "animation-tech-lab-v1",
+      "state": "LAB_VERIFIED",
+      "production_status": "NOT_INTEGRATED",
+      "description": "Original lightweight Canvas Tween-like easing, two-segment knight arm motion, bounded deterministic environmental particles in existing V9 medieval game.",
+      "source": {
+        "location": "github",
+        "path": "scripts/animation-lab-v1.js"
+      },
+      "asset": {
+        "location": "library_zip",
+        "path": "medieval_world_infinite_pack_v3/animation-lab-v1.js",
+        "library_path": "/World Server/Graphics Reference/GRAPHICS-DEMO-001-v9-animation-lab-a1.zip",
+        "sha256": "58d72dc5e044862fd708d0e7becef0b21c3de11997300e3b1d6d6946b80446eb"
+      },
+      "test": {
+        "location": "github",
+        "path": "tests/test_animation_lab_v1.py"
+      },
+      "evidence": "evidence/animation-tech-lab-v1-browser.json",
+      "next": "Retest adapter against latest parallel V9 house source and exact reference, optimize animation render cost, never assert full upstream libraries installed."
     }
   ],
   "planned_v9": [
