@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "checkpoint": 15,
-  "updated_at_utc": "2026-10-13T09:24:00Z",
+  "checkpoint": 16,
+  "updated_at_utc": "2026-10-13T09:29:00Z",
   "phase": "EXPERIMENTING",
   "baseline": {
     "lab_main_sha": "14f8fac5e6bf631b633e472e75c3e7012181b747",
@@ -23,7 +23,8 @@
     "Animation Lab render cost rose desktop 1.112ms->1.228ms, mobile-sized 0.760ms->0.776ms median; real iPhone11/85% reference visibility unmeasured, no production integration.",
     "CLEAN_SERVER #491, #496, #379 have mandatory independent BLOCK; no safe protected integration. 50/50 true productive minutes UNMEASURED.",
     "Checkpoint15 original-game faceted rock/moss/flowers/shore art ZIP persisted in Library with SHA; artistically closer but independent >=85/100 visual fidelity remains UNKNOWN, no live deployment or physical iPhone11 evidence.",
-    "Existing World PRs #491, #496 and #379 still require independent review; measured 50/50 productive minutes UNMEASURED."
+    "Existing World PRs #491, #496 and #379 still require independent review; measured 50/50 productive minutes UNMEASURED.",
+    "Lab CI detected prior checkpoint14 invalid experiment status and V10 browser evidence lacking experiment schema; repaired both without promoting visual score or user verdict."
   ],
   "active_experiments": [
     "graphics-terrain-v8",

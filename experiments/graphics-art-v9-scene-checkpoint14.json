@@ -51,5 +51,7 @@
     "before_emulated_mobile": "/World Server/Graphics Reference/original_animation-anim_a1-390x844.png",
     "after_emulated_mobile": "/World Server/Graphics Reference/scene_art_v9-candidate_v9-390x844.png"
   },
-  "status": "LOCAL_BROWSER_TESTED_NOT_PRODUCTION"
+  "status": "EXPERIMENTING",
+  "execution_state": "LOCAL_BROWSER_TESTED_NOT_PRODUCTION",
+  "user_decision": null
 }

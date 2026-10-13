@@ -225,5 +225,9 @@
   "art_quality_independent_score": null,
   "actual_iPhone11": false,
   "public_live_deployment": false,
-  "owner_pass_fail": null
+  "owner_pass_fail": null,
+  "execution_state": "LOCAL_BROWSER_TESTED_UNSCORED",
+  "status": "EXPERIMENTING",
+  "user_decision": null,
+  "id": "graphics-landscape-v10-browser"
 }
