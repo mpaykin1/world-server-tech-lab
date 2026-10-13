@@ -1,0 +1,69 @@
+{
+  "id": "animation-tech-lab-v2",
+  "status": "EXPERIMENTING",
+  "user_decision": null,
+  "user_decision_source": null,
+  "analysis_commit": null,
+  "baseline": {
+    "lab_main_sha": "8f4d093bf992ec35bbec8c6b3e3cf4356765f541",
+    "scene_zip_sha256": "63d0a624e7c982b7df2151b0de38b300a393437a21a5f65f78ef5b9935295ef7",
+    "animation_a1_zip_sha256": "58d72dc5e044862fd708d0e7becef0b21c3de11997300e3b1d6d6946b80446eb"
+  },
+  "artifact": {
+    "playable_zip_library": "/World Server/Graphics Reference/GRAPHICS-DEMO-001-playable-v9-scene-art-animation-v2.zip",
+    "playable_zip_sha256": "ea673cce39bd1abe165e3bde2c9baee593b4b0cacc087b1bea5a199c3e2b8192",
+    "evidence_and_full_sources_library": "/World Server/Graphics Reference/GRAPHICS-DEMO-001-animation-v2-evidence-source.zip",
+    "evidence_bundle_sha256": "395b27f548b7bcdb188390a447d745d540616792340c1fd069b34e87cbeb5bd7"
+  },
+  "preserved": {
+    "original_map_sha256": "183302c32964f5a43ca7fe7ab4d00c1a8d1d4fe861c8688fbe41c2c9369dec8e",
+    "house_png_sha256": "b874e392d20e6c798c60066c2ae93a165a62908caa1dfdbc275f0a29ace584c7",
+    "cliff_macro_sha256": "dbe4c027f209d007b0a310e4b971cbec8e86e6a55a5d03f969296f7edb4d0fbe"
+  },
+  "results": {
+    "browser": "Chromium Linux via inlined original assets (container sandbox disallows local URL navigation)",
+    "viewport_desktop": [
+      1200,
+      780
+    ],
+    "viewport_mobile_emulation": [
+      390,
+      844
+    ],
+    "asset_loading": "44/44",
+    "keyboard_move": "~44-45 px during 650ms",
+    "touch_move": "~36-39px during 420ms",
+    "environment": "tree sway, water highlights and smoke at original house (2,3) visibly vary in real frames",
+    "js_errors": 0,
+    "scene_v9_v1_desktop_median_ms": 1.8,
+    "scene_v9_v2_desktop_median_ms": 2.1,
+    "scene_v9_v1_mobile_median_ms": 1.1,
+    "scene_v9_v2_mobile_median_ms": 1.3,
+    "fps_observed_range": [
+      58,
+      60
+    ],
+    "all_existing_v9_python_tests": "PASSED",
+    "source_v2_negative_guards": "PASSED",
+    "new_timers": 0,
+    "particles_extra_cap": 0,
+    "sway_cap": 18,
+    "shimmer_cap": 28,
+    "smoke_cap": 8
+  },
+  "measurement": {
+    "user_visibility_percent": null,
+    "reference_similarity_percent": null,
+    "physical_iphone11_fps": null
+  },
+  "production_integrated": false,
+  "new_automations": 0,
+  "actual_50_50_minutes": "UNMEASURED",
+  "limitations": [
+    "No independent 85+ visibility test, don't publish a game testing URL.",
+    "No physical iPhone11 verified.",
+    "Extra draw time measured, optimization remains open.",
+    "Library archives are accessible to authorized user chats, not public runtime deployments."
+  ],
+  "next_action": "Exact-head lab CI, safe PR integration, runtime measurement and independent reference assessment; keep user verdict null."
+}

@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "checkpoint": 13,
-  "updated_at_utc": "2026-10-13T08:33:49Z",
+  "checkpoint": 14,
+  "updated_at_utc": "2026-10-13T09:27:47.206Z",
   "phase": "EXPERIMENTING",
   "baseline": {
-    "lab_main_sha": "14f8fac5e6bf631b633e472e75c3e7012181b747",
+    "lab_main_sha": "8f4d093bf992ec35bbec8c6b3e3cf4356765f541",
     "world_master_sha": "754e97829c2dae88424904cafbf44c50ab6b688d",
     "upstream_opengame_sha": "c9bea37786af524bf3bbe802f2b67d23816fa5c0"
   },
@@ -20,15 +20,16 @@
     "Existing V9 cliff macro ZIP is separately SHA-pinned in Library; it does not demonstrate 85/100 artistic reference score.",
     "No real iPhone11, independent full-reference assessment or stable public deployment; visibility UNKNOWN, user verdict null.",
     "PR #496 same existing branch new regression commit 14aa209ab89b194184065d9012cb8cad0c1a8ed1; CI pending; independent BLOCK not bypassed. #491 and #379 still open. Productive 50/50 minutes UNMEASURED.",
-    "Animation Lab A1 is an isolated original Canvas adapter tested on pinned V9 baseline; actual upstream Tween.js/DragonBonesJS/PixiJS runtimes NOT imported, and latest parallel V9 house integration remains UNVERIFIED.",
-    "Animation Lab render cost rose desktop 1.112ms->1.228ms, mobile-sized 0.760ms->0.776ms median; real iPhone11/85% reference visibility unmeasured, no production integration."
+    "V9 scene-art checkpoint13 + A1 animation + additional bounded V2 adapter are now packed together and Library-persisted. Chromium tested desktop and simulated mobile; full independent visual 85/100 and physical iPhone 11 remain UNKNOWN.",
+    "V2 adds measurable render cost (desktop median ~1.8→2.1ms, simulated mobile ~1.1→1.3ms in one paired run). FPS observed roughly 58–60; measurements vary. No unearned quality or performance PASS."
   ],
   "active_experiments": [
     "graphics-terrain-v8",
     "graphics-art-v9",
-    "animation-tech-lab-v1"
+    "animation-tech-lab-v1",
+    "animation-tech-lab-v2"
   ],
-  "next_action": "Continue MAIN V9 artistic work in other chat without conflicts. Integrate isolated V9 animation adapter from scripts/animation-lab-v1.js into latest tested V9 house/cliff build, reconcile changes by tests; limit particle work; also continue CLEAN_SERVER in existing PRs at target 50/50. Do not count unmeasured work ratio. User PASS/FAIL remains null.",
+  "next_action": "Tech Lab PR for checkpoint14: await exact-head CI and safe integration. Any chat restore the v2 Library playable ZIP + evidence bundle and source scripts; next optimize effect cost/independent quality scoring and continue CLEAN_SERVER #491/#496/#379. No new scheduled jobs. Owner PASS/FAIL UNSET.",
   "owner_decision": null,
   "links": {
     "main_project": "https://github.com/mpaykin1/World_server",
@@ -64,6 +65,10 @@
     "v9_browser_evidence": "https://github.com/mpaykin1/world-server-tech-lab/blob/main/experiments/graphics-art-v9-browser.json",
     "animation_tech_lab": "https://github.com/mpaykin1/world-server-tech-lab/blob/main/experiments/animation-tech-lab-v1.json",
     "animation_tech_adapter": "https://github.com/mpaykin1/world-server-tech-lab/blob/main/scripts/animation-lab-v1.js",
-    "animation_tech_full_zip": "/World Server/Graphics Reference/GRAPHICS-DEMO-001-v9-animation-lab-a1.zip"
+    "animation_tech_full_zip": "/World Server/Graphics Reference/GRAPHICS-DEMO-001-v9-animation-lab-a1.zip",
+    "animation_v2_playable_library": "/World Server/Graphics Reference/GRAPHICS-DEMO-001-playable-v9-scene-art-animation-v2.zip",
+    "animation_v2_evidence_library": "/World Server/Graphics Reference/GRAPHICS-DEMO-001-animation-v2-evidence-source.zip",
+    "animation_v2_module": "https://github.com/mpaykin1/world-server-tech-lab/blob/ai/chatgpt/v9-scene-animation-v2-checkpoint14/scripts/animation-lab-v2.js",
+    "animation_v2_checkpoint_pr": "PENDING_CREATED"
   }
 }
