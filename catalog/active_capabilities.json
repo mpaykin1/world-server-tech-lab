@@ -155,54 +155,6 @@
       },
       "evidence": "evidence/animation-tech-lab-v1-browser.json",
       "next": "Retest adapter against latest parallel V9 house source and exact reference, optimize animation render cost, never assert full upstream libraries installed."
-    },
-    {
-      "id": "graphics-scene-art-v9-shoreline",
-      "state": "LOCAL_BROWSER_TESTED",
-      "production_status": "NOT_INTEGRATED",
-      "description": "Original medieval v9 game, original house art/lantern/rocks, animation-lab and deterministic bounded water ripples; same scene map/collision and keyboard/touch preserved.",
-      "source": {
-        "location": "lab_branch",
-        "path": "scripts/water-light-v9.js",
-        "ref": "ai/chatgpt/v9-scene-art-checkpoint13-20261013"
-      },
-      "test": {
-        "location": "lab_branch",
-        "path": "tests/test_scene_art_v9_contract.py"
-      },
-      "playable_zip": {
-        "location": "library",
-        "path": "/World Server/Graphics Reference/GRAPHICS-DEMO-001-playable-v9-scene-art-checkpoint13.zip",
-        "sha256": "63d0a624e7c982b7df2151b0de38b300a393437a21a5f65f78ef5b9935295ef7"
-      },
-      "evidence": "experiments/graphics-art-v9-scene-checkpoint14.json",
-      "visual_score": null,
-      "real_iphone11": null,
-      "next": "Independent reference rubric >=85 and physical iPhone11 FPS; protected World Server integration only after CLEAN_SERVER slot."
-    },
-    {
-      "id": "graphics-landscape-v10",
-      "state": "LOCAL_BROWSER_TESTED",
-      "production_status": "NOT_INTEGRATED",
-      "description": "Original medieval Canvas V9 game upgraded with separate deterministic faceted-rock atlas, mossy boundary stones, meadow flowers and shore shimmer; map/collision intact.",
-      "source": {
-        "location": "lab_branch",
-        "path": "scripts/rebuild_v10_landscape.py",
-        "ref": "ai/chatgpt/v9-scene-art-checkpoint13-20261013"
-      },
-      "test": {
-        "location": "lab_branch",
-        "path": "tests/test_v10_landscape.py"
-      },
-      "evidence": "experiments/graphics-landscape-v10.json",
-      "playable_zip": {
-        "location": "library",
-        "path": "/World Server/Graphics Reference/GRAPHICS-DEMO-001-playable-v10-landscape-checkpoint15.zip",
-        "sha256": "d5ecdbae1a5885799e508d2a72780b3815bb149a67740c43a19ac046b451ad5f"
-      },
-      "independent_visual_score": null,
-      "real_iphone11": null,
-      "next": "Reference and holdout independent visual score, real iPhone, safe production slot."
     }
   ],
   "planned_v9": [
@@ -220,9 +172,10 @@
     },
     {
       "id": "water",
-      "state": "PARTIAL_LOCAL_BROWSER_TESTED",
+      "state": "PARTIAL_LOCAL_SLICE_UNVERIFIED",
       "goal": "Shoreline foam and water-depth gradient, ripples and fish splashes",
-      "acceptance": "synchronized shore masks, no duplicate draw, no flicker"
+      "acceptance": "synchronized shore masks, no duplicate draw, no flicker",
+      "local_browser_proof": "PARTIAL_LOCAL_BROWSER_TESTED"
     },
     {
       "id": "lighting",
@@ -286,5 +239,55 @@
     "javascript_errors": 0,
     "assets_loaded": 44,
     "assets_total": 44
-  }
+  },
+  "experimental_capabilities": [
+    {
+      "id": "graphics-scene-art-v9-shoreline",
+      "state": "LOCAL_BROWSER_TESTED",
+      "production_status": "NOT_INTEGRATED",
+      "description": "Original medieval v9 game, original house art/lantern/rocks, animation-lab and deterministic bounded water ripples; same scene map/collision and keyboard/touch preserved.",
+      "source": {
+        "location": "lab_branch",
+        "path": "scripts/water-light-v9.js",
+        "ref": "ai/chatgpt/v9-scene-art-checkpoint13-20261013"
+      },
+      "test": {
+        "location": "lab_branch",
+        "path": "tests/test_scene_art_v9_contract.py"
+      },
+      "playable_zip": {
+        "location": "library",
+        "path": "/World Server/Graphics Reference/GRAPHICS-DEMO-001-playable-v9-scene-art-checkpoint13.zip",
+        "sha256": "63d0a624e7c982b7df2151b0de38b300a393437a21a5f65f78ef5b9935295ef7"
+      },
+      "evidence": "experiments/graphics-art-v9-scene-checkpoint14.json",
+      "visual_score": null,
+      "real_iphone11": null,
+      "next": "Independent reference rubric >=85 and physical iPhone11 FPS; protected World Server integration only after CLEAN_SERVER slot."
+    },
+    {
+      "id": "graphics-landscape-v10",
+      "state": "LOCAL_BROWSER_TESTED",
+      "production_status": "NOT_INTEGRATED",
+      "description": "Original medieval Canvas V9 game upgraded with separate deterministic faceted-rock atlas, mossy boundary stones, meadow flowers and shore shimmer; map/collision intact.",
+      "source": {
+        "location": "lab_branch",
+        "path": "scripts/rebuild_v10_landscape.py",
+        "ref": "ai/chatgpt/v9-scene-art-checkpoint13-20261013"
+      },
+      "test": {
+        "location": "lab_branch",
+        "path": "tests/test_v10_landscape.py"
+      },
+      "evidence": "experiments/graphics-landscape-v10.json",
+      "playable_zip": {
+        "location": "library",
+        "path": "/World Server/Graphics Reference/GRAPHICS-DEMO-001-playable-v10-landscape-checkpoint15.zip",
+        "sha256": "d5ecdbae1a5885799e508d2a72780b3815bb149a67740c43a19ac046b451ad5f"
+      },
+      "independent_visual_score": null,
+      "real_iphone11": null,
+      "next": "Reference and holdout independent visual score, real iPhone, safe production slot."
+    }
+  ]
 }

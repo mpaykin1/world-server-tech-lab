@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "checkpoint": 16,
-  "updated_at_utc": "2026-10-13T09:29:00Z",
+  "checkpoint": 17,
+  "updated_at_utc": "2026-10-13T09:32:00Z",
   "phase": "EXPERIMENTING",
   "baseline": {
     "lab_main_sha": "14f8fac5e6bf631b633e472e75c3e7012181b747",
@@ -24,7 +24,8 @@
     "CLEAN_SERVER #491, #496, #379 have mandatory independent BLOCK; no safe protected integration. 50/50 true productive minutes UNMEASURED.",
     "Checkpoint15 original-game faceted rock/moss/flowers/shore art ZIP persisted in Library with SHA; artistically closer but independent >=85/100 visual fidelity remains UNKNOWN, no live deployment or physical iPhone11 evidence.",
     "Existing World PRs #491, #496 and #379 still require independent review; measured 50/50 productive minutes UNMEASURED.",
-    "Lab CI detected prior checkpoint14 invalid experiment status and V10 browser evidence lacking experiment schema; repaired both without promoting visual score or user verdict."
+    "Lab CI detected prior checkpoint14 invalid experiment status and V10 browser evidence lacking experiment schema; repaired both without promoting visual score or user verdict.",
+    "CI demonstrated earlier experimental capabilities wrongly placed under LAB_VERIFIED; moved to experimental_capabilities. No independent >85 reference proof or actual physical iPhone is claimed."
   ],
   "active_experiments": [
     "graphics-terrain-v8",
@@ -33,7 +34,7 @@
     "graphics-art-v9-scene-checkpoint14",
     "graphics-landscape-v10"
   ],
-  "next_action": "Rebuild V10 from pinned checkpoint14 ZIP with scripts/rebuild_v10_landscape.py; independently score 85/100 user reference on visible holdout and measure physical iPhone11; protect CLEAN_SERVER existing #491/#496/#379 gates; no World master integration while blocked.",
+  "next_action": "Use MAIN LIVE_STATUS and catalog.experimental_capabilities for V10; run GitHub Actions Lab CI, safely integrate Lab PR #13 if green; continue artistic improvement and independent visual rubric; maintain CLEAN_SERVER blocks and 50/50 truthful minutes.",
   "owner_decision": null,
   "links": {
     "main_project": "https://github.com/mpaykin1/World_server",
@@ -82,6 +83,7 @@
     "v10_evidence_json_library": "/World Server/Graphics Reference/GRAPHICS-DEMO-001-v10-browser-evidence.json",
     "v10_village_comparison_library": "/World Server/Graphics Reference/GRAPHICS-DEMO-001-v9-v10-village-comparison.png",
     "v10_cliff_comparison_library": "/World Server/Graphics Reference/GRAPHICS-DEMO-001-v9-v10-cliff-comparison.png",
-    "v10_holdout_comparison_library": "/World Server/Graphics Reference/GRAPHICS-DEMO-001-v9-v10-holdout-comparison.png"
+    "v10_holdout_comparison_library": "/World Server/Graphics Reference/GRAPHICS-DEMO-001-v9-v10-holdout-comparison.png",
+    "v10_lab_pr": "https://github.com/mpaykin1/world-server-tech-lab/pull/13"
   }
 }
