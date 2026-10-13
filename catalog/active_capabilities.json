@@ -168,7 +168,8 @@
       "asset": {
         "location": "library_zip",
         "library_path": "/World Server/Graphics Reference/GRAPHICS-DEMO-001-playable-v9-scene-art-animation-v2.zip",
-        "sha256": "ea673cce39bd1abe165e3bde2c9baee593b4b0cacc087b1bea5a199c3e2b8192"
+        "sha256": "ea673cce39bd1abe165e3bde2c9baee593b4b0cacc087b1bea5a199c3e2b8192",
+        "path": "medieval_world_infinite_pack_v3/animation-lab-v2.js"
       },
       "test": {
         "location": "github",
