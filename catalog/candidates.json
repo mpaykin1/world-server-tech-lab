@@ -32,6 +32,30 @@
       "license_verified": false,
       "upstream_sha": null,
       "status": "RESEARCH_ONLY"
+    },
+    {
+      "id": "autotiler-47",
+      "url": "https://github.com/itsjavi/autotiler",
+      "purpose": "47-blob 8-neighbor shoreline autotile masks for original 16px canvas engine",
+      "license_verified": true,
+      "license": "MIT",
+      "upstream_sha": "bc573b8e9a2f94a2dadc175de42cd3eecc33cbd3",
+      "status": "EXPERIMENTING",
+      "integration_mode": "independently authored 47-mask+PNG/JSON interchange; upstream implementation NOT imported; binary NOT installed",
+      "binary_installed": false,
+      "asset_license": "user-owned original assets + independently generated PNG"
+    },
+    {
+      "id": "pixelorama-spritesheets",
+      "url": "https://github.com/Orama-Interactive/Pixelorama",
+      "purpose": "edit/import horizontal four-frame PNG tree spritesheets; optional CLI editor, not production dependency",
+      "license_verified": true,
+      "license": "MIT",
+      "upstream_sha": "fe85685938aa33b29c525014c9b8a490f19951ff",
+      "status": "EXPERIMENTING",
+      "integration_mode": "PNG-spritesheet interchange and optional offline input; Pixelorama executable NOT installed or executed",
+      "binary_installed": false,
+      "asset_license": "user-owned original sprites with independently animated crowns"
     }
   ]
 }

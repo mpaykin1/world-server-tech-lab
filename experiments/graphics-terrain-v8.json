@@ -1,0 +1,70 @@
+{
+  "id": "graphics-terrain-v8",
+  "objective": "Original medieval game V7->V8: independent 47-mask 8-neighbor PNG shoreline atlas with 4 animated frames + 4-frame leaf sway using Pixelorama PNG interchange.",
+  "upstream": [
+    {
+      "url": "https://github.com/itsjavi/autotiler",
+      "sha": "bc573b8e9a2f94a2dadc175de42cd3eecc33cbd3",
+      "license": "MIT",
+      "used": "47-mask specification and bit order only; no upstream code copied/installed"
+    },
+    {
+      "url": "https://github.com/Orama-Interactive/Pixelorama",
+      "sha": "fe85685938aa33b29c525014c9b8a490f19951ff",
+      "license": "MIT",
+      "used": "4-horizontal-frame PNG spritesheet compatibility only; editor not installed"
+    }
+  ],
+  "baseline": {
+    "lab_main_sha": "18080f62b5652d300ce10b22acc40299039aeffa",
+    "world_master_sha": "754e97829c2dae88424904cafbf44c50ab6b688d",
+    "original_map_sha256": "183302c32964f5a43ca7fe7ab4d00c1a8d1d4fe861c8688fbe41c2c9369dec8e"
+  },
+  "artifacts": {
+    "library_path": "/World Server/Graphics Reference/GRAPHICS-DEMO-001-playable-sandbox-v8(1).zip",
+    "library_file_id": "libfile_4c419d8808008191a472a67a8d5c95d5",
+    "sha256": "419e7dd925f8b60beaeca662c1f19e86553113f4f1572490ffec5137f3beea11",
+    "game_files": "inside full ZIP: tools/upgrade_to_v8.py, tools/test_graphics_v8.py, original demo.html, graphics-v8.js, altered graphics-enhancement.js, assets/tiles/shoreline_blob_47_v8.png+JSON and assets/objects/tree_round_v8.png/tree_pine_v8.png with Pixelorama frame dimensions"
+  },
+  "validation": {
+    "original_game_tests": "V4/V5/V6/V7/V8 + test_pack PASS in isolated extracted user original game",
+    "node_check": "both graphics-v8.js and graphics-enhancement.js PASS",
+    "chromium": "43/43 actual PNG files loaded, keyboard movement works, no JS errors",
+    "desktop_v7_cpu_draw_ms": 1.1108,
+    "desktop_v8_cpu_draw_ms": 1.1346,
+    "mobile_emulated_v7_cpu_draw_ms": 0.6838,
+    "mobile_emulated_v8_cpu_draw_ms": 0.6108,
+    "runs": 3,
+    "real_iphone11": false,
+    "reference_similarity_percent": null,
+    "user_visibility_percent": null,
+    "visual_quality_score": null,
+    "warning": "CPU per draw is NOT proof of real mobile FPS or overall artwork improvement."
+  },
+  "clean_server": {
+    "same_existing_prs": [
+      491,
+      496,
+      379
+    ],
+    "latest_review_artifacts": [
+      11792069702,
+      11792368768
+    ],
+    "review_status": "BLOCK unresolved; inconsistent model claims documented with exact code, no merge or reruns for luck",
+    "triage_pr491": "https://github.com/mpaykin1/World_server/pull/491#issuecomment-6139678082",
+    "triage_pr496": "https://github.com/mpaykin1/World_server/pull/496#issuecomment-6139678785",
+    "world_server_master_updated": false
+  },
+  "lane_policy": {
+    "GRAPHICS": 50,
+    "CLEAN_SERVER": 50,
+    "actual_productive_split": "UNMEASURED",
+    "new_automations": 0,
+    "no_paid_api": true
+  },
+  "status": "EXPERIMENTING",
+  "user_decision": null,
+  "user_decision_source": null,
+  "analysis_commit": null
+}

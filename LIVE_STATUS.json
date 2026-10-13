@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "checkpoint": 8,
-  "updated_at_utc": "2026-10-12T16:44:26Z",
+  "checkpoint": 9,
+  "updated_at_utc": "2026-10-13T06:37:47Z",
   "phase": "EXPERIMENTING",
   "baseline": {
-    "lab_main_sha": "0ed7ec4613c982ffecda5c833e6b5830f0c5b616",
+    "lab_main_sha": "18080f62b5652d300ce10b22acc40299039aeffa",
     "world_master_sha": "754e97829c2dae88424904cafbf44c50ab6b688d",
     "upstream_opengame_sha": "c9bea37786af524bf3bbe802f2b67d23816fa5c0"
   },
@@ -16,15 +16,16 @@
     "new_scheduled_jobs": 0
   },
   "blockers": [
-    "V7 shape atlas improves tree/rock/shore silhouettes but visual quality remains below owner target; exact reference similarity and >85% user visibility remain UNMEASURED.",
-    "Desktop Chromium and emulated mobile render timings are not physical iPhone 11 evidence; render cost v7 modestly above v6 in short runs, optimize if reproducible.",
-    "World Server #491 still unmerged: exact-head independent review INCONCLUSIVE on HTTP 429 (not PASS); #496/#379 remain BLOCK. Protected gates must not be bypassed.",
-    "V7 is a full user-owned ZIP in Library and reproducible Lab source, not a publicly deployed or released production game."
+    "V8 complete user-owned ZIP has offline 47-mask atlas (4 animated shore frames) and 4-frame trees; user reference fidelity and visibility >85% are NOT measured.",
+    "Real iPhone 11 not tested. Desktop Chromium V8 1.1346ms vs V7 1.1108ms mean CPU canvas; mobile viewport V8 0.6108ms vs V7 0.6838ms, short unthrottled 3-run CPU measurements are not definitive device FPS.",
+    "Autotiler and Pixelorama tools are MIT-verified and their interchange conventions implemented; upstream executables/core were not installed or run to avoid resource cost.",
+    "World Server PR #491/#496/#379 remain under independent review BLOCK/other merge gates, no merge or checker bypass; CLEAN_SERVER not PASS.",
+    "Other V8 ZIP exists from concurrent earlier work; this tested SHA was saved separately under duplicate-safe Library name (1) and must not be confused with it."
   ],
   "active_experiments": [
-    "graphics-terrain-v7"
+    "graphics-terrain-v8"
   ],
-  "next_action": "GRAPHICS: assess actual v7 shapes vs owner image at matched composition; improve architectural cliffs, water, bridge and scene layout, monitor render cost and real iPhone11. CLEAN_SERVER: retain #491 same branch and reproduce any substantive new reviewer claim only after free provider capacity returns (no identical retries), resolve #496/#379 independently without bypass. Record actual 50/50 productive minutes honestly; owner PASS/FAIL UNSET.",
+  "next_action": "On GRAPHICS improve actual V8 rendering toward target screenshot and run iPhone11 physical device checks. On CLEAN_SERVER take next exact-SHA review artifact for existing #491/#496, reproduce genuine defects and fix same PR, never accept model-hallucinated PASS. Only user can PASS/FAIL after verifiable MVP; maintain 50/50 actual work, minutes currently UNMEASURED.",
   "owner_decision": null,
   "links": {
     "main_project": "https://github.com/mpaykin1/World_server",
@@ -41,6 +42,11 @@
     "terrain_v7_artifact_library": "/World Server/Graphics Reference/GRAPHICS-DEMO-001-playable-sandbox-v7.zip",
     "terrain_v7_source": "https://github.com/mpaykin1/world-server-tech-lab/blob/main/scripts/terrain_v7_upgrade.py",
     "terrain_v7_frame_library": "/World Server/Graphics Reference/GRAPHICS-DEMO-001-v7-frame.png",
-    "clean_491_reproduction": "https://github.com/mpaykin1/World_server/pull/491#issuecomment-6128555573"
+    "clean_491_reproduction": "https://github.com/mpaykin1/World_server/pull/491#issuecomment-6128555573",
+    "terrain_v8_artifact_library": "/World Server/Graphics Reference/GRAPHICS-DEMO-001-playable-sandbox-v8(1).zip",
+    "terrain_v8_artifact_sha256": "419e7dd925f8b60beaeca662c1f19e86553113f4f1572490ffec5137f3beea11",
+    "terrain_v8_reference_frame": "/World Server/Graphics Reference/GRAPHICS-DEMO-001-v8-final-browser-frame.png",
+    "clean_491_triage": "https://github.com/mpaykin1/World_server/pull/491#issuecomment-6139678082",
+    "clean_496_triage": "https://github.com/mpaykin1/World_server/pull/496#issuecomment-6139678785"
   }
 }
