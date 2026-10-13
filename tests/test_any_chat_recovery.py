@@ -54,7 +54,10 @@ class RecoveryContract(unittest.TestCase):
         self.assertIsNone(self.v9["measurement"]["user_visibility_percent"])
         self.assertEqual(self.r["candidate_v9"]["generated_zip_sha256"],
                          self.v9["generated_candidate"]["zip_sha256"])
-        self.assertEqual(self.s["checkpoint"], 12)
+        checkpoint_events=[json.loads(x) for x in (ROOT/"checkpoints/history.jsonl").read_text().splitlines() if x.strip()]
+        self.assertGreaterEqual(self.s["checkpoint"], 12)
+        self.assertEqual(checkpoint_events[-1]["checkpoint"],self.s["checkpoint"])
+        self.assertEqual(len(checkpoint_events),self.s["checkpoint"])
         self.assertIsNone(self.s["owner_decision"])
     def test_recovery_and_entrypoint_references(self):
         for path in ("README.md","AGENTS.md","docs/RECOVERY_ANY_CHAT_RU.md"):
