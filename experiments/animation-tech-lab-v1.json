@@ -1,0 +1,159 @@
+{
+  "id": "animation-tech-lab-v1",
+  "objective": "Integrate lightweight original Canvas animation adapters inspired by three MIT animation technology repos into the existing user-owned V9 medieval game, without loading full third-party engine runtimes.",
+  "status": "EXPERIMENTING",
+  "user_decision": null,
+  "user_decision_source": null,
+  "analysis_commit": null,
+  "baseline": {
+    "world_server_master_sha": "754e97829c2dae88424904cafbf44c50ab6b688d",
+    "lab_main_sha": "14f8fac5e6bf631b633e472e75c3e7012181b747",
+    "source_zip_name": "GRAPHICS-DEMO-001-playable-sandbox-v9.zip",
+    "source_zip_sha256": "b493fe88aece2466a13118d8e65c2f220f17b8afd10f3ba0f733945e11b4d624",
+    "target_reference": "/World Server/Graphics Reference/target_pixel_art_reference_2026-10-10.png"
+  },
+  "artifact": {
+    "library_zip_path": "/World Server/Graphics Reference/GRAPHICS-DEMO-001-v9-animation-lab-a1.zip",
+    "library_zip_sha256": "58d72dc5e044862fd708d0e7becef0b21c3de11997300e3b1d6d6946b80446eb",
+    "library_gif_path": "/World Server/Graphics Reference/GRAPHICS-DEMO-001-v9-animation-proof.gif",
+    "library_comparison_path": "/World Server/Graphics Reference/GRAPHICS-DEMO-001-v9-animation-before-after.png",
+    "library_benchmark_path": "/World Server/Graphics Reference/GRAPHICS-DEMO-001-v9-animation-browser-benchmark.json",
+    "game_module_path": "medieval_world_infinite_pack_v3/animation-lab-v1.js",
+    "game_test_path": "medieval_world_infinite_pack_v3/tools/test_animation_lab_v1.py"
+  },
+  "upstream": [
+    {
+      "name": "Tween.js",
+      "repo": "https://github.com/tweenjs/tween.js",
+      "sha": "84a27a74febbda783eebb7ee3e7d7c7abfd25009",
+      "license": "MIT",
+      "integration": "Original easing formulas only; no upstream runtime bundled"
+    },
+    {
+      "name": "DragonBonesJS",
+      "repo": "https://github.com/DragonBones/DragonBonesJS",
+      "sha": "64b6c69ae35777c2404be68c9192e2c56906079e",
+      "license": "MIT",
+      "integration": "Original 2-segment Canvas rig concept, no DragonBones runtime"
+    },
+    {
+      "name": "PixiJS Particle Emitter",
+      "repo": "https://github.com/pixijs-userland/particle-emitter",
+      "sha": "0fffdd9d18cabd99e5ee1d5dc94136613d5fcb04",
+      "license": "MIT",
+      "integration": "Original bounded Canvas particles, PixiJS NOT installed"
+    }
+  ],
+  "implementation": {
+    "state": "ISOLATED_RUNTIME_TESTED",
+    "production": "NOT_INTEGRATED",
+    "renderer": "existing canvas",
+    "animation_frame_loop": "original",
+    "new_timers": 0,
+    "extra_automations": 0,
+    "particle_cap": 48,
+    "compatible_with_existing_v9_house_changes": "UNVERIFIED; isolated ZIP derived from V9 baseline prior to parallel house changes",
+    "physical_iphone11": "NOT_TESTED"
+  },
+  "evidence": {
+    "desktop": {
+      "samples_draw_ms": [
+        1.148,
+        1.228,
+        1.408
+      ],
+      "median_draw_ms": 1.228,
+      "loaded": 44,
+      "total": 44,
+      "js_errors": [],
+      "start": {
+        "motion": 0.03833072181119995,
+        "angle": -0.09375441566963583,
+        "particles": 15
+      },
+      "end": {
+        "motion": 0.37359558354719896,
+        "angle": -0.003650250330642817,
+        "particles": 17,
+        "playerX": 427.2644000000002,
+        "playerY": 232,
+        "objects": 104
+      }
+    },
+    "desktop_base": {
+      "samples_draw_ms": [
+        1.072,
+        1.16,
+        1.112
+      ],
+      "median_draw_ms": 1.112,
+      "loaded": 44,
+      "total": 44,
+      "js_errors": [],
+      "start": {},
+      "end": {
+        "playerX": 427.2644000000002,
+        "playerY": 232,
+        "objects": 104
+      }
+    },
+    "mobile_simulated": {
+      "samples_draw_ms": [
+        0.816,
+        0.776,
+        0.716
+      ],
+      "median_draw_ms": 0.776,
+      "loaded": 44,
+      "total": 44,
+      "js_errors": [],
+      "start": {
+        "motion": 0.032383925011200035,
+        "angle": -0.09106861600392298,
+        "particles": 8
+      },
+      "end": {
+        "motion": 0.30984900938880044,
+        "angle": -0.03113854466189489,
+        "particles": 6,
+        "playerX": 427.2644000000002,
+        "playerY": 232,
+        "objects": 104
+      }
+    },
+    "mobile_base": {
+      "samples_draw_ms": [
+        0.76,
+        0.82,
+        0.712
+      ],
+      "median_draw_ms": 0.76,
+      "loaded": 44,
+      "total": 44,
+      "js_errors": [],
+      "start": {},
+      "end": {
+        "playerX": 427.2644000000002,
+        "playerY": 232,
+        "objects": 104
+      }
+    },
+    "measured_samples": 3,
+    "loaded_images": 44,
+    "js_errors": 0,
+    "anim_phases_change": true,
+    "safety_tests": "Node --check, V9 pack tests and animation contract passed locally; GitHub CI pending"
+  },
+  "measurement": {
+    "reference_similarity_percent": null,
+    "user_visibility_percent": null,
+    "physical_iphone_fps": null
+  },
+  "limitations": [
+    "Full Tween.js/DragonBonesJS/PixiJS source libraries NOT bundled or installed, only original adapters inspired by their concepts.",
+    "Not a verified integration atop newest parallel V9 house-art branch; must reconcile any newer V9 code without overwrite.",
+    "Chromium synthetic mobile viewport is not a real physical iPhone 11 test.",
+    "Additional render-time cost measured; full-frame 60fps and end-to-end reference quality are NOT proven."
+  ],
+  "next_action": "Rebase this isolated animation adapter onto the latest independently tested V9 houses/cliffs world; smoke+leaf+knight real-browser frames, run exact-head CI, compare performance; production only after independent review and user PASS/FAIL."
+}

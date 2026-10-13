@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "checkpoint": 12,
-  "updated_at_utc": "2026-10-13T08:20:15Z",
+  "checkpoint": 13,
+  "updated_at_utc": "2026-10-13T08:33:49Z",
   "phase": "EXPERIMENTING",
   "baseline": {
-    "lab_main_sha": "f93877b517a9fcd11c1e4148d045f91b294c489c",
+    "lab_main_sha": "14f8fac5e6bf631b633e472e75c3e7012181b747",
     "world_master_sha": "754e97829c2dae88424904cafbf44c50ab6b688d",
     "upstream_opengame_sha": "c9bea37786af524bf3bbe802f2b67d23816fa5c0"
   },
@@ -19,13 +19,16 @@
     "V9 house code, runtime patch and exact PNG sprite NOW committed to Lab GitHub, independently recoverable, but full playable ZIP still local-only (Library container_session_unavailable). Do not call playable ZIP remotely accessible.",
     "Existing V9 cliff macro ZIP is separately SHA-pinned in Library; it does not demonstrate 85/100 artistic reference score.",
     "No real iPhone11, independent full-reference assessment or stable public deployment; visibility UNKNOWN, user verdict null.",
-    "PR #496 same existing branch new regression commit 14aa209ab89b194184065d9012cb8cad0c1a8ed1; CI pending; independent BLOCK not bypassed. #491 and #379 still open. Productive 50/50 minutes UNMEASURED."
+    "PR #496 same existing branch new regression commit 14aa209ab89b194184065d9012cb8cad0c1a8ed1; CI pending; independent BLOCK not bypassed. #491 and #379 still open. Productive 50/50 minutes UNMEASURED.",
+    "Animation Lab A1 is an isolated original Canvas adapter tested on pinned V9 baseline; actual upstream Tween.js/DragonBonesJS/PixiJS runtimes NOT imported, and latest parallel V9 house integration remains UNVERIFIED.",
+    "Animation Lab render cost rose desktop 1.112ms->1.228ms, mobile-sized 0.760ms->0.776ms median; real iPhone11/85% reference visibility unmeasured, no production integration."
   ],
   "active_experiments": [
     "graphics-terrain-v8",
-    "graphics-art-v9"
+    "graphics-art-v9",
+    "animation-tech-lab-v1"
   ],
-  "next_action": "Rebuild full playable ZIP from pinned V9 Library base SHA b493fe88... plus Lab assets/graphics-v9/house_3d.png and scripts/house_runtime_patch_v9.py; resolve container_session_unavailable for persistent ZIP and browser comparison. Test holdout/actual iPhone11 and 85/100 independently; continue exact-SHA independent review #496 without gate bypass, then #491/#379.",
+  "next_action": "Continue MAIN V9 artistic work in other chat without conflicts. Integrate isolated V9 animation adapter from scripts/animation-lab-v1.js into latest tested V9 house/cliff build, reconcile changes by tests; limit particle work; also continue CLEAN_SERVER in existing PRs at target 50/50. Do not count unmeasured work ratio. User PASS/FAIL remains null.",
   "owner_decision": null,
   "links": {
     "main_project": "https://github.com/mpaykin1/World_server",
@@ -58,6 +61,9 @@
     "v9_house_asset": "https://github.com/mpaykin1/world-server-tech-lab/blob/main/assets/graphics-v9/house_3d.png",
     "v9_house_renderer_patch": "https://github.com/mpaykin1/world-server-tech-lab/blob/main/scripts/house_runtime_patch_v9.py",
     "v9_house_runtime_test": "https://github.com/mpaykin1/world-server-tech-lab/blob/main/tests/test_house_v9_runtime_patch.py",
-    "v9_browser_evidence": "https://github.com/mpaykin1/world-server-tech-lab/blob/main/experiments/graphics-art-v9-browser.json"
+    "v9_browser_evidence": "https://github.com/mpaykin1/world-server-tech-lab/blob/main/experiments/graphics-art-v9-browser.json",
+    "animation_tech_lab": "https://github.com/mpaykin1/world-server-tech-lab/blob/main/experiments/animation-tech-lab-v1.json",
+    "animation_tech_adapter": "https://github.com/mpaykin1/world-server-tech-lab/blob/main/scripts/animation-lab-v1.js",
+    "animation_tech_full_zip": "/World Server/Graphics Reference/GRAPHICS-DEMO-001-v9-animation-lab-a1.zip"
   }
 }

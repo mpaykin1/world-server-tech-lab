@@ -1,0 +1,88 @@
+{
+  "baseline_v9": {
+    "1200x780": {
+      "samples_draw_ms": [
+        1.072,
+        1.16,
+        1.112
+      ],
+      "median_draw_ms": 1.112,
+      "loaded": 44,
+      "total": 44,
+      "js_errors": [],
+      "start": {},
+      "end": {
+        "playerX": 427.2644000000002,
+        "playerY": 232,
+        "objects": 104
+      }
+    },
+    "390x844": {
+      "samples_draw_ms": [
+        0.76,
+        0.82,
+        0.712
+      ],
+      "median_draw_ms": 0.76,
+      "loaded": 44,
+      "total": 44,
+      "js_errors": [],
+      "start": {},
+      "end": {
+        "playerX": 427.2644000000002,
+        "playerY": 232,
+        "objects": 104
+      }
+    }
+  },
+  "animated_v9": {
+    "1200x780": {
+      "samples_draw_ms": [
+        1.148,
+        1.228,
+        1.408
+      ],
+      "median_draw_ms": 1.228,
+      "loaded": 44,
+      "total": 44,
+      "js_errors": [],
+      "start": {
+        "motion": 0.03833072181119995,
+        "angle": -0.09375441566963583,
+        "particles": 15
+      },
+      "end": {
+        "motion": 0.37359558354719896,
+        "angle": -0.003650250330642817,
+        "particles": 17,
+        "playerX": 427.2644000000002,
+        "playerY": 232,
+        "objects": 104
+      }
+    },
+    "390x844": {
+      "samples_draw_ms": [
+        0.816,
+        0.776,
+        0.716
+      ],
+      "median_draw_ms": 0.776,
+      "loaded": 44,
+      "total": 44,
+      "js_errors": [],
+      "start": {
+        "motion": 0.032383925011200035,
+        "angle": -0.09106861600392298,
+        "particles": 8
+      },
+      "end": {
+        "motion": 0.30984900938880044,
+        "angle": -0.03113854466189489,
+        "particles": 6,
+        "playerX": 427.2644000000002,
+        "playerY": 232,
+        "objects": 104
+      }
+    }
+  }
+}
