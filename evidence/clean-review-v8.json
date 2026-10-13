@@ -1,0 +1,18 @@
+{
+  "status": "BLOCK_NOT_PASS",
+  "reproduced_on_exact_source": true,
+  "no_world_master_changes": true,
+  "pr491": {
+    "sha": "7fa01e7e63d74a8b07fb35c36ce01ff6b351a113",
+    "artifact": 11792069702,
+    "claim": "candidateContext omitted from reviewPatch signature",
+    "finding": "The exact JS function signature includes candidateContext=null default; allegation of ReferenceError from undeclared candidateContext contradicted. Other external reviewers INCONCLUSIVE incl 429, avoid self-issued PASS."
+  },
+  "pr496": {
+    "sha": "628920577b28fd74f15dbc7e19822783975032d8",
+    "artifact": 11792368768,
+    "claim": "PR budget exit 73 causes successful workflow; admitted=false after exit, Node24 nonexistent",
+    "finding": "Actual YAML writes admitted=false before exit 73; nonzero step fails. Other family verdicts BLOCK; keep gate. Node24 CI already valid."
+  },
+  "next_action": "Obtain trusted independently successful full exact-head review; repair actual defects in the same PR branch, do not override required check, avoid duplicate PR writers."
+}

@@ -6,3 +6,4 @@
 {"checkpoint":6,"updated_at_utc":"2026-10-12T16:19:17Z","event":"REAL_V6_MATERIAL_VARIANTS_FPS_REFERENCE_AUDIT_AND_EXISTING_PR491_FIX","evidence":"experiments/graphics-terrain-v6.json","owner_decision":null}
 {"checkpoint":7,"updated_at_utc":"2026-10-12T16:43:21Z","event":"GRAPHICS_V7_REAL_SILHOUETTES_AND_PR491_REVIEW_REPRO","evidence":"experiments/graphics-terrain-v7.json","owner_decision":null}
 {"checkpoint":8,"updated_at_utc":"2026-10-12T16:44:26Z","event":"GRAPHICS_V7_SCHEMA_CI_HARD_GATE_REPAIRED","evidence":"experiments/graphics-terrain-v7.json","owner_decision":null}
+{"checkpoint":9,"updated_at_utc":"2026-10-13T06:37:47Z","event":"V8_47_BLOB_AND_PIXELORAMA_PNG_INTERCHANGE_CLEAN_REVIEW_TRIAGE","evidence":"experiments/graphics-terrain-v8.json","owner_decision":null}
