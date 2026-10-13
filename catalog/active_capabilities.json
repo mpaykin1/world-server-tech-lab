@@ -1,0 +1,182 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-10-13T07:45:46Z",
+  "source_of_truth": "LIVE_STATUS.json",
+  "owner_decision": null,
+  "production_status": "NOT_INTEGRATED",
+  "last_verified_lab_sha": "f93877b517a9fcd11c1e4148d045f91b294c489c",
+  "last_verified_world_master_sha": "754e97829c2dae88424904cafbf44c50ab6b688d",
+  "verified_baseline": {
+    "experiment": "graphics-terrain-v8",
+    "library_path": "/World Server/Graphics Reference/GRAPHICS-DEMO-001-playable-sandbox-v8(1).zip",
+    "library_file_id": "libfile_4c419d8808008191a472a67a8d5c95d5",
+    "sha256": "419e7dd925f8b60beaeca662c1f19e86553113f4f1572490ffec5137f3beea11",
+    "root_directory": "medieval_world_infinite_pack_v3/",
+    "verified": "2026-10-13 by materialization, SHA-256 and ZIP member listing",
+    "target_reference_library_path": "/World Server/Graphics Reference/target_pixel_art_reference_2026-10-10.png",
+    "user_visibility_percent": null,
+    "physical_iphone11_test": null
+  },
+  "upstream": [
+    {
+      "name": "Autotiler",
+      "url": "https://github.com/itsjavi/autotiler",
+      "sha": "bc573b8e9a2f94a2dadc175de42cd3eecc33cbd3",
+      "license": "MIT",
+      "usage": "Algorithm specification and adapter only; upstream code not installed"
+    },
+    {
+      "name": "Pixelorama",
+      "url": "https://github.com/Orama-Interactive/Pixelorama",
+      "sha": "fe85685938aa33b29c525014c9b8a490f19951ff",
+      "license": "MIT",
+      "usage": "PNG 4-frame sheet interoperability only; editor not installed"
+    }
+  ],
+  "implemented": [
+    {
+      "id": "autotiler-47",
+      "state": "LAB_VERIFIED",
+      "production_status": "NOT_INTEGRATED",
+      "description": "47 legal 8-neighbor bitmasks; adapter converts runtime and Autotiler bit order",
+      "source": {
+        "location": "github",
+        "path": "scripts/autotiler_47_index.py"
+      },
+      "asset": {
+        "location": "library_zip",
+        "path": "medieval_world_infinite_pack_v3/assets/tiles/shoreline_blob_47_v8.json"
+      },
+      "test": {
+        "location": "library_zip",
+        "path": "medieval_world_infinite_pack_v3/tools/test_graphics_v8.py"
+      },
+      "evidence": "experiments/graphics-terrain-v8.json",
+      "next": "Reuse normalized masks for V9 rock, stone road and shore transitions without doubling old passes."
+    },
+    {
+      "id": "animated-shore",
+      "state": "LAB_VERIFIED",
+      "production_status": "NOT_INTEGRATED",
+      "description": "Four-frame shoreline foam atlas for all 47 masks",
+      "source": {
+        "location": "library_zip",
+        "path": "medieval_world_infinite_pack_v3/graphics-v8.js"
+      },
+      "asset": {
+        "location": "library_zip",
+        "path": "medieval_world_infinite_pack_v3/assets/tiles/shoreline_blob_47_v8.png"
+      },
+      "test": {
+        "location": "library_zip",
+        "path": "medieval_world_infinite_pack_v3/tools/test_graphics_v8.py"
+      },
+      "evidence": "experiments/graphics-terrain-v8.json",
+      "next": "Improve water depth, flowing ripples and timing; measure per-frame cost."
+    },
+    {
+      "id": "pixelorama-compatible-broadleaf",
+      "state": "LAB_VERIFIED",
+      "production_status": "NOT_INTEGRATED",
+      "description": "Four horizontal frames of round tree foliage PNG, editor-compatible format",
+      "source": {
+        "location": "library_zip",
+        "path": "medieval_world_infinite_pack_v3/tools/upgrade_to_v8.py"
+      },
+      "asset": {
+        "location": "library_zip",
+        "path": "medieval_world_infinite_pack_v3/assets/objects/tree_round_v8.png"
+      },
+      "test": {
+        "location": "library_zip",
+        "path": "medieval_world_infinite_pack_v3/tools/test_graphics_v8.py"
+      },
+      "evidence": "experiments/graphics-terrain-v8.json",
+      "next": "Refine canopy, lighting and per-tree sway phase without installing Pixelorama."
+    },
+    {
+      "id": "pixelorama-compatible-pine",
+      "state": "LAB_VERIFIED",
+      "production_status": "NOT_INTEGRATED",
+      "description": "Four horizontal frames of pine foliage PNG",
+      "source": {
+        "location": "library_zip",
+        "path": "medieval_world_infinite_pack_v3/tools/upgrade_to_v8.py"
+      },
+      "asset": {
+        "location": "library_zip",
+        "path": "medieval_world_infinite_pack_v3/assets/objects/tree_pine_v8.png"
+      },
+      "test": {
+        "location": "library_zip",
+        "path": "medieval_world_infinite_pack_v3/tools/test_graphics_v8.py"
+      },
+      "evidence": "experiments/graphics-terrain-v8.json",
+      "next": "Add varied per-tree phase offsets, contact shadows and richer silhouettes."
+    },
+    {
+      "id": "original-game-world",
+      "state": "LAB_VERIFIED",
+      "production_status": "NOT_INTEGRATED",
+      "description": "User-owned medieval original map, controller and canvas engine preserved inside V8 ZIP",
+      "source": {
+        "location": "library_zip",
+        "path": "medieval_world_infinite_pack_v3/demo.html"
+      },
+      "asset": {
+        "location": "library_zip",
+        "path": "medieval_world_infinite_pack_v3/map.json"
+      },
+      "test": {
+        "location": "library_zip",
+        "path": "medieval_world_infinite_pack_v3/tools/test_pack.py"
+      },
+      "evidence": "experiments/graphics-terrain-v8.json",
+      "next": "Edit existing game, never replace runtime with a new engine."
+    }
+  ],
+  "planned_v9": [
+    {
+      "id": "houses",
+      "state": "NOT_IMPLEMENTED",
+      "goal": "Pixel-art roof planes/walls/windows/doors/chimney, shadows and lanterns",
+      "acceptance": "visible game sprite proof, collision and painter ordering intact"
+    },
+    {
+      "id": "cliffs",
+      "state": "NOT_IMPLEMENTED",
+      "goal": "Faceted rocks with irregular silhouette, non-repeating seam atlas and shaded ledges",
+      "acceptance": "no square cliff repetitions in fixed camera screenshot"
+    },
+    {
+      "id": "water",
+      "state": "NOT_IMPLEMENTED",
+      "goal": "Shoreline foam and water-depth gradient, ripples and fish splashes",
+      "acceptance": "synchronized shore masks, no duplicate draw, no flicker"
+    },
+    {
+      "id": "lighting",
+      "state": "NOT_IMPLEMENTED",
+      "goal": "Prebaked object shadows, lamp/window emissive accents, optional cheap evening mode",
+      "acceptance": "real runtime frame cost measured; iPhone budget protected"
+    },
+    {
+      "id": "animation",
+      "state": "NOT_IMPLEMENTED",
+      "goal": "Tree sway, smoke, sign/flag, glowing lamps and water life",
+      "acceptance": "sprite frames visibly change without timers per object or leaks"
+    }
+  ],
+  "clean_server": {
+    "open_prs": [
+      491,
+      496,
+      379
+    ],
+    "review_gate": "Never convert BLOCK/INCONCLUSIVE/429 to PASS",
+    "actual_50_50_minutes": "UNMEASURED",
+    "new_scheduled_tasks": 0,
+    "source": "https://github.com/mpaykin1/World_server/issues/80"
+  },
+  "access_scope": "GitHub readable by any authorized new chat; archive requires this user's Library authorization. Neither is auto-installed into production."
+}
