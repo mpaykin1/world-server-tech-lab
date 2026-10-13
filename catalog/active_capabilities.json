@@ -155,6 +155,30 @@
       },
       "evidence": "evidence/animation-tech-lab-v1-browser.json",
       "next": "Retest adapter against latest parallel V9 house source and exact reference, optimize animation render cost, never assert full upstream libraries installed."
+    },
+    {
+      "id": "graphics-scene-art-v9-shoreline",
+      "state": "LOCAL_BROWSER_TESTED",
+      "production_status": "NOT_INTEGRATED",
+      "description": "Original medieval v9 game, original house art/lantern/rocks, animation-lab and deterministic bounded water ripples; same scene map/collision and keyboard/touch preserved.",
+      "source": {
+        "location": "lab_branch",
+        "path": "scripts/water-light-v9.js",
+        "ref": "ai/chatgpt/v9-scene-art-checkpoint13-20261013"
+      },
+      "test": {
+        "location": "lab_branch",
+        "path": "tests/test_scene_art_v9_contract.py"
+      },
+      "playable_zip": {
+        "location": "library",
+        "path": "/World Server/Graphics Reference/GRAPHICS-DEMO-001-playable-v9-scene-art-checkpoint13.zip",
+        "sha256": "63d0a624e7c982b7df2151b0de38b300a393437a21a5f65f78ef5b9935295ef7"
+      },
+      "evidence": "experiments/graphics-art-v9-scene-checkpoint14.json",
+      "visual_score": null,
+      "real_iphone11": null,
+      "next": "Independent reference rubric >=85 and physical iPhone11 FPS; protected World Server integration only after CLEAN_SERVER slot."
     }
   ],
   "planned_v9": [
@@ -172,19 +196,19 @@
     },
     {
       "id": "water",
-      "state": "NOT_IMPLEMENTED",
+      "state": "PARTIAL_LOCAL_BROWSER_TESTED",
       "goal": "Shoreline foam and water-depth gradient, ripples and fish splashes",
       "acceptance": "synchronized shore masks, no duplicate draw, no flicker"
     },
     {
       "id": "lighting",
-      "state": "NOT_IMPLEMENTED",
+      "state": "PARTIAL_LOCAL_SLICE_UNVERIFIED",
       "goal": "Prebaked object shadows, lamp/window emissive accents, optional cheap evening mode",
       "acceptance": "real runtime frame cost measured; iPhone budget protected"
     },
     {
       "id": "animation",
-      "state": "NOT_IMPLEMENTED",
+      "state": "PARTIAL_LOCAL_SLICE_UNVERIFIED",
       "goal": "Tree sway, smoke, sign/flag, glowing lamps and water life",
       "acceptance": "sprite frames visibly change without timers per object or leaks"
     }
@@ -227,5 +251,16 @@
     "exact_sprite_sha256": "b874e392d20e6c798c60066c2ae93a165a62908caa1dfdbc275f0a29ace584c7",
     "exact_renderer_patch": "scripts/house_runtime_patch_v9.py",
     "browser_evidence": "experiments/graphics-art-v9-browser.json"
+  },
+  "last_candidate_checkpoint": 14,
+  "last_candidate_zip_sha256": "63d0a624e7c982b7df2151b0de38b300a393437a21a5f65f78ef5b9935295ef7",
+  "last_candidate_browser_metrics": {
+    "desktop_fps": 60,
+    "emulated_mobile_fps": 60,
+    "desktop_cpu_draw_ms_median": 1.126,
+    "emulated_mobile_cpu_draw_ms_median": 0.764,
+    "javascript_errors": 0,
+    "assets_loaded": 44,
+    "assets_total": 44
   }
 }
