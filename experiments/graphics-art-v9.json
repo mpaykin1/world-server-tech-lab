@@ -70,6 +70,9 @@
     "zip_persistence": "BLOCKED_CONTAINER_SESSION_UNAVAILABLE",
     "image_proof_sha256": "3be29673349bc5af71f2050f50d7305bd70a42ce5075716719f2bcadd431b6b0",
     "renderer_changes": "same existing graphics-enhancement.js: houseLantern and corrected smoke",
-    "source_code": "scripts/house_art_v9_upgrade.py"
+    "source_code": "scripts/house_art_v9_upgrade.py",
+    "persistent_sprite_path": "assets/graphics-v9/house_3d.png",
+    "persistent_renderer_patch_path": "scripts/house_runtime_patch_v9.py",
+    "browser_evidence": "experiments/graphics-art-v9-browser.json"
   }
 }

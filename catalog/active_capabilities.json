@@ -200,6 +200,10 @@
     ],
     "owner_decision": null,
     "real_iphone11": null,
-    "visual_score": null
+    "visual_score": null,
+    "exact_sprite_source": "assets/graphics-v9/house_3d.png",
+    "exact_sprite_sha256": "b874e392d20e6c798c60066c2ae93a165a62908caa1dfdbc275f0a29ace584c7",
+    "exact_renderer_patch": "scripts/house_runtime_patch_v9.py",
+    "browser_evidence": "experiments/graphics-art-v9-browser.json"
   }
 }
