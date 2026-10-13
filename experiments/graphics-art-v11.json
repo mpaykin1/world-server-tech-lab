@@ -1,0 +1,73 @@
+{
+  "id": "graphics-art-v11",
+  "status": "EXPERIMENTING",
+  "user_decision": null,
+  "user_decision_source": null,
+  "analysis_commit": null,
+  "objective": "Improve original game's authored pixel assets and their shared look using CPU-only deterministic artwork; preserve V10.1 geometry/AI/animation and collision",
+  "baseline": {
+    "source_zip_path": "/World Server/Graphics Reference/GRAPHICS-DEMO-001-playable-v10.1-landscape-animation-v2-candidate.zip",
+    "source_zip_sha256": "9bf4ff524e73256a74464b334bcf8a4e2d6d6c04cfc5a605f35e7193111d4b71",
+    "source_map_sha256": "183302c32964f5a43ca7fe7ab4d00c1a8d1d4fe861c8688fbe41c2c9369dec8e",
+    "lab_main_parent": "e6dffc5057ae57b792b00b3ab29a8f0e9eb15795"
+  },
+  "artifact": {
+    "playable_library": "/World Server/Graphics Reference/GRAPHICS-DEMO-001-v11-artistic-asset-upgrade.zip",
+    "playable_sha256": "7653127a586178c779a30be23e3d6033c1247d84226c2ab339c3f0a43000a064",
+    "evidence_library": "/World Server/Graphics Reference/GRAPHICS-DEMO-001-v11-real-chromium-evidence.zip",
+    "evidence_sha256": "b894934450cfdc761849c282ee0ff776c6c9300dcfbd75c4404115c5bbc279d3",
+    "source_generator": "scripts/build_art_v11.py",
+    "runtime_adapter": "scripts/art-v11.js",
+    "source_integrator": "scripts/apply_art_v11.py",
+    "game_regression": "reference/v11/test_v11_art.py"
+  },
+  "evidence": {
+    "chromium": "real headless Chromium locally, inlined original assets because sandbox URL navigations blocked",
+    "viewports": [
+      [
+        1200,
+        780
+      ],
+      [
+        390,
+        844
+      ]
+    ],
+    "tested_scenes": [
+      "village",
+      "bridge",
+      "mine",
+      "forest"
+    ],
+    "source_assets_generated": 13,
+    "load_before_after": [
+      "45/45",
+      "52/52"
+    ],
+    "js_errors": 0,
+    "keyboard_and_touch": "PASSED (simulated touch on Chromium, not iPhone11)",
+    "map_sha_unchanged": true,
+    "baseline_desktop_draw_median_ms": 1.9,
+    "v11_desktop_draw_median_ms": 2.1,
+    "baseline_mobile_emulated_draw_median_ms": 1.2,
+    "v11_mobile_emulated_draw_median_ms": 1.4,
+    "reported_fps_approx": 60,
+    "real_chromium_gif_frames": 16,
+    "extra_timers": 0,
+    "extra_scheduled_jobs": 0,
+    "production_changes": false
+  },
+  "measurement": {
+    "user_visibility_percent": null,
+    "independent_reference_similarity_percent": null,
+    "physical_iphone11_fps": null,
+    "owner_decision": null
+  },
+  "status_notes": [
+    "Only first artistic asset/scene pass; changes noticeable but insufficient to prove matching user's pixel-art sketch.",
+    "Extra 0.2ms median draw cost observed; no performance improvement claimed.",
+    "Not a baked Blender 3D pipeline; current upgrades are CPU-authored 2.5D pixel sprites. Blender authoring remains OPEN.",
+    "Reference >85% and physical iPhone require independent evidence before any public gameplay test link."
+  ],
+  "next_action": "Iterate author-level asset variety and whole-world composition against original reference, cost-optimize decals; separately continue World Server CLEAN_SERVER PR review blocks #491/#496/#379; user PASS/FAIL remains null."
+}

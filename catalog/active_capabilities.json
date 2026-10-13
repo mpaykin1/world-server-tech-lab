@@ -313,8 +313,31 @@
       "independent_visual_score": null,
       "real_iphone11": null,
       "next": "Reference and holdout independent visual score, real iPhone, safe production slot."
+    },
+    {
+      "id": "graphics-art-v11",
+      "state": "LOCAL_BROWSER_TESTED",
+      "production_status": "NOT_INTEGRATED",
+      "description": "Original medieval V10.1 plus thirteen re-authored pixel-art assets and bounded 90-decal Canvas adapter; browser tested 4 scenes desktop+emulated-mobile; original collision and map unchanged, 0 JS errors.",
+      "source": {
+        "location": "github",
+        "path": "scripts/build_art_v11.py"
+      },
+      "test": {
+        "location": "github",
+        "path": "reference/v11/test_v11_art.py"
+      },
+      "evidence": "experiments/graphics-art-v11.json",
+      "playable_zip": {
+        "location": "library",
+        "path": "/World Server/Graphics Reference/GRAPHICS-DEMO-001-v11-artistic-asset-upgrade.zip",
+        "sha256": "7653127a586178c779a30be23e3d6033c1247d84226c2ab339c3f0a43000a064"
+      },
+      "independent_visual_score": null,
+      "real_iphone11": null,
+      "next": "Iterate author-level asset variety and whole-world composition against original reference, cost-optimize decals; separately continue World Server CLEAN_SERVER PR review blocks #491/#496/#379; user PASS/FAIL remains null."
     }
   ],
-  "last_candidate_checkpoint": 15,
-  "last_candidate_zip_sha256": "d5ecdbae1a5885799e508d2a72780b3815bb149a67740c43a19ac046b451ad5f"
+  "last_candidate_checkpoint": 16,
+  "last_candidate_zip_sha256": "7653127a586178c779a30be23e3d6033c1247d84226c2ab339c3f0a43000a064"
 }
