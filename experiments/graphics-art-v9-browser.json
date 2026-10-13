@@ -73,5 +73,7 @@
     "CPU draw p95 increased on emulated mobile: 1.2 to 1.9 ms; optimize before deployment",
     "Full ZIP not uploaded due container_session_unavailable",
     "No independently assessed target-reference score or true mobile device benchmark"
-  ]
+  ],
+  "status": "EXPERIMENTING",
+  "user_decision": null
 }
