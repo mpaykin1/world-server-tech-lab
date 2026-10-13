@@ -1,0 +1,61 @@
+{
+  "id": "graphics-art-v9",
+  "objective": "Same owner-owned medieval V8 game: artistic houses, cliffs, water, lighting and animations using verified adapters while improving CLEAN_SERVER 50/50",
+  "baseline": {
+    "source_experiment": "experiments/graphics-terrain-v8.json",
+    "library_path": "/World Server/Graphics Reference/GRAPHICS-DEMO-001-playable-sandbox-v8(1).zip",
+    "sha256": "419e7dd925f8b60beaeca662c1f19e86553113f4f1572490ffec5137f3beea11",
+    "reference_image": "/World Server/Graphics Reference/target_pixel_art_reference_2026-10-10.png"
+  },
+  "milestones": [
+    {
+      "id": "houses",
+      "state": "NOT_IMPLEMENTED",
+      "goal": "Pixel-art roof planes/walls/windows/doors/chimney, shadows and lanterns",
+      "acceptance": "visible game sprite proof, collision and painter ordering intact"
+    },
+    {
+      "id": "cliffs",
+      "state": "NOT_IMPLEMENTED",
+      "goal": "Faceted rocks with irregular silhouette, non-repeating seam atlas and shaded ledges",
+      "acceptance": "no square cliff repetitions in fixed camera screenshot"
+    },
+    {
+      "id": "water",
+      "state": "NOT_IMPLEMENTED",
+      "goal": "Shoreline foam and water-depth gradient, ripples and fish splashes",
+      "acceptance": "synchronized shore masks, no duplicate draw, no flicker"
+    },
+    {
+      "id": "lighting",
+      "state": "NOT_IMPLEMENTED",
+      "goal": "Prebaked object shadows, lamp/window emissive accents, optional cheap evening mode",
+      "acceptance": "real runtime frame cost measured; iPhone budget protected"
+    },
+    {
+      "id": "animation",
+      "state": "NOT_IMPLEMENTED",
+      "goal": "Tree sway, smoke, sign/flag, glowing lamps and water life",
+      "acceptance": "sprite frames visibly change without timers per object or leaks"
+    }
+  ],
+  "implementation_status": "NOT_IMPLEMENTED",
+  "measurement": {
+    "real_browser_image": null,
+    "user_visibility_percent": null,
+    "reference_similarity_percent": null,
+    "real_iphone11_fps": null
+  },
+  "clean_server": {
+    "existing_world_prs": [
+      491,
+      496,
+      379
+    ],
+    "actual_productive_split": "UNMEASURED"
+  },
+  "status": "NOT_TESTED",
+  "user_decision": null,
+  "user_decision_source": null,
+  "analysis_commit": null
+}

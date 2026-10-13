@@ -14,3 +14,7 @@
 ## Recovery
 
 Start at [LIVE_STATUS.json](LIVE_STATUS.json), validate exact GitHub state and last checkpoint. Each material experiment/catalog edit must include status + history in the same commit. No synthetic owner PASS/FAIL, new hourly task or engine replacement.
+
+## New Chat / V9 current work order
+
+Read [V9 EXECUTION BRIEF](docs/V9_EXECUTION_BRIEF_RU.md), [cross-chat recovery](docs/RECOVERY_ANY_CHAT_RU.md) and [VERIFIED capability registry](catalog/active_capabilities.json). V9 artistic improvements are NOT IMPLEMENTED; V8 autotile and spritesheet adapters are lab-only. Current checkpoint in [LIVE_STATUS](LIVE_STATUS.json); owner verdict UNSET and 50/50 actual minutes UNMEASURED. Re-check exact V8(1) Library SHA before work.
