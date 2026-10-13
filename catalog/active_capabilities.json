@@ -138,13 +138,13 @@
   "planned_v9": [
     {
       "id": "houses",
-      "state": "NOT_IMPLEMENTED",
+      "state": "PARTIAL_LOCAL_SLICE_UNVERIFIED",
       "goal": "Pixel-art roof planes/walls/windows/doors/chimney, shadows and lanterns",
       "acceptance": "visible game sprite proof, collision and painter ordering intact"
     },
     {
       "id": "cliffs",
-      "state": "NOT_IMPLEMENTED",
+      "state": "PARTIAL_LOCAL_SLICE_UNVERIFIED",
       "goal": "Faceted rocks with irregular silhouette, non-repeating seam atlas and shaded ledges",
       "acceptance": "no square cliff repetitions in fixed camera screenshot"
     },
@@ -176,7 +176,30 @@
     "review_gate": "Never convert BLOCK/INCONCLUSIVE/429 to PASS",
     "actual_50_50_minutes": "UNMEASURED",
     "new_scheduled_tasks": 0,
-    "source": "https://github.com/mpaykin1/World_server/issues/80"
+    "source": "https://github.com/mpaykin1/World_server/issues/80",
+    "last_candidate_fix_sha": "14aa209ab89b194184065d9012cb8cad0c1a8ed1"
   },
-  "access_scope": "GitHub readable by any authorized new chat; archive requires this user's Library authorization. Neither is auto-installed into production."
+  "access_scope": "GitHub readable by any authorized new chat; archive requires this user's Library authorization. Neither is auto-installed into production.",
+  "candidate_v9": {
+    "status": "PARTIAL_LOCAL_BROWSER_TESTED_NOT_PRODUCTION",
+    "repository_source": "scripts/house_art_v9_upgrade.py",
+    "source_baseline_zip_sha256": "b493fe88aece2466a13118d8e65c2f220f17b8afd10f3ba0f733945e11b4d624",
+    "generated_zip_sha256": "dafd7f692358614226cca5c860b54949acbd70d1a78adb30b1c5e23dcdd6b282",
+    "persistent_zip_location": null,
+    "persistence_blocker": "container_session_unavailable",
+    "reference_comparison_sha256": "3be29673349bc5af71f2050f50d7305bd70a42ce5075716719f2bcadd431b6b0",
+    "desktop_fps_observed_approx": 60,
+    "emulated_mobile_fps_observed_approx": 60,
+    "desktop_cpu_draw_p95_ms_before_after": [
+      1.9,
+      2
+    ],
+    "mobile_emulation_cpu_draw_p95_ms_before_after": [
+      1.2,
+      1.9
+    ],
+    "owner_decision": null,
+    "real_iphone11": null,
+    "visual_score": null
+  }
 }

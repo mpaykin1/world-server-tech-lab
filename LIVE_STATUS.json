@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "checkpoint": 10,
-  "updated_at_utc": "2026-10-13T07:45:46Z",
+  "checkpoint": 11,
+  "updated_at_utc": "2026-10-13T08:12:44Z",
   "phase": "EXPERIMENTING",
   "baseline": {
     "lab_main_sha": "f93877b517a9fcd11c1e4148d045f91b294c489c",
@@ -16,16 +16,16 @@
     "new_scheduled_jobs": 0
   },
   "blockers": [
-    "V9 houses/cliffs/water/lighting/animation are PLANNED, not implemented. No V9 playable ZIP, screenshots or 85% visibility measurement.",
-    "Autotiler 47-mask and Pixelorama-compatible PNG are LAB_VERIFIED within V8 ZIP, NOT installed application or production runtime.",
-    "Two different V8 ZIPs in Library: exact verified base is V8(1), SHA 419e7dd925f8b60beaeca662c1f19e86553113f4f1572490ffec5137f3beea11.",
-    "World Server #491/#496/#379 independent review gates remain unresolved; CLEAN_SERVER not PASS. Actual productive 50/50 minutes UNMEASURED.",
-    "No physical iPhone11 test; owner PASS/FAIL UNSET."
+    "V9 house sprite+lantern added in original V9 game and browser tested locally, but updated playable ZIP 3be... comparison / dafd... ZIP could NOT be uploaded to Library: container_session_unavailable; not permanently hosted.",
+    "Existing V9 cliff macro ZIP is separately SHA-pinned in Library; it does not demonstrate 85/100 artistic reference score.",
+    "No real iPhone11, independent full-reference assessment or stable public deployment; visibility UNKNOWN, user verdict null.",
+    "PR #496 same existing branch new regression commit 14aa209ab89b194184065d9012cb8cad0c1a8ed1; CI pending; independent BLOCK not bypassed. #491 and #379 still open. Productive 50/50 minutes UNMEASURED."
   ],
   "active_experiments": [
-    "graphics-terrain-v8"
+    "graphics-terrain-v8",
+    "graphics-art-v9"
   ],
-  "next_action": "Start from docs/V9_EXECUTION_BRIEF_RU.md and catalog/active_capabilities.json. Verify exact V8(1) ZIP SHA; build one visible V9 house sprite/render slice in same game and one proven CLEAN_SERVER fix in existing blocked World PR, then save evidence/status on Lab PR and issue #80. No 6th task.",
+  "next_action": "Repair Library file persistence for generated exact ZIP dafd7f692358614226cca5c860b54949acbd70d1a78adb30b1c5e23dcdd6b282 and comparison; then CI+independent Fleet V9 review, visual reference+holdout and physical device; meanwhile resolve existing #496 exact-head independent blockers without force merging. Preserve 50/50, no sixth task.",
   "owner_decision": null,
   "links": {
     "main_project": "https://github.com/mpaykin1/World_server",
@@ -51,6 +51,9 @@
     "capability_registry": "https://github.com/mpaykin1/world-server-tech-lab/blob/main/catalog/active_capabilities.json",
     "v9_execution_brief": "https://github.com/mpaykin1/world-server-tech-lab/blob/main/docs/V9_EXECUTION_BRIEF_RU.md",
     "any_chat_recovery": "https://github.com/mpaykin1/world-server-tech-lab/blob/main/docs/RECOVERY_ANY_CHAT_RU.md",
-    "v9_experiment": "https://github.com/mpaykin1/world-server-tech-lab/blob/main/experiments/graphics-art-v9.json"
+    "v9_experiment": "https://github.com/mpaykin1/world-server-tech-lab/blob/main/experiments/graphics-art-v9.json",
+    "v9_house_source": "https://github.com/mpaykin1/world-server-tech-lab/blob/ai/chatgpt/v9-house-art-20261013/scripts/house_art_v9_upgrade.py",
+    "v9_house_clean_regression": "https://github.com/mpaykin1/World_server/commit/14aa209ab89b194184065d9012cb8cad0c1a8ed1",
+    "v9_house_zip_persistence": "BLOCKED_CONTAINER_SESSION_UNAVAILABLE"
   }
 }

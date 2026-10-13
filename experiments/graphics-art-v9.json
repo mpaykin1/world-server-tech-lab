@@ -10,13 +10,13 @@
   "milestones": [
     {
       "id": "houses",
-      "state": "NOT_IMPLEMENTED",
+      "state": "PARTIAL_LOCAL_SLICE_UNVERIFIED",
       "goal": "Pixel-art roof planes/walls/windows/doors/chimney, shadows and lanterns",
       "acceptance": "visible game sprite proof, collision and painter ordering intact"
     },
     {
       "id": "cliffs",
-      "state": "NOT_IMPLEMENTED",
+      "state": "PARTIAL_LOCAL_SLICE_UNVERIFIED",
       "goal": "Faceted rocks with irregular silhouette, non-repeating seam atlas and shaded ledges",
       "acceptance": "no square cliff repetitions in fixed camera screenshot"
     },
@@ -39,12 +39,13 @@
       "acceptance": "sprite frames visibly change without timers per object or leaks"
     }
   ],
-  "implementation_status": "NOT_IMPLEMENTED",
+  "implementation_status": "PARTIAL_LOCAL_BROWSER_TESTED",
   "measurement": {
-    "real_browser_image": null,
+    "real_browser_image": "LOCAL_ONLY_NO_PERSISTENT_URL",
     "user_visibility_percent": null,
     "reference_similarity_percent": null,
-    "real_iphone11_fps": null
+    "real_iphone11_fps": null,
+    "browser_observation": "44/44 PNG, zero JS exceptions, desktop/emulated mobile keyboard/touch movement, 3x draw timing, approx 60 FPS. No physical iPhone."
   },
   "clean_server": {
     "existing_world_prs": [
@@ -52,10 +53,23 @@
       496,
       379
     ],
-    "actual_productive_split": "UNMEASURED"
+    "actual_productive_split": "UNMEASURED",
+    "existing_prs": [
+      491,
+      496,
+      379
+    ],
+    "pr496_regression_sha": "14aa209ab89b194184065d9012cb8cad0c1a8ed1"
   },
-  "status": "NOT_TESTED",
+  "status": "EXPERIMENTING",
   "user_decision": null,
   "user_decision_source": null,
-  "analysis_commit": null
+  "analysis_commit": null,
+  "generated_candidate": {
+    "zip_sha256": "dafd7f692358614226cca5c860b54949acbd70d1a78adb30b1c5e23dcdd6b282",
+    "zip_persistence": "BLOCKED_CONTAINER_SESSION_UNAVAILABLE",
+    "image_proof_sha256": "3be29673349bc5af71f2050f50d7305bd70a42ce5075716719f2bcadd431b6b0",
+    "renderer_changes": "same existing graphics-enhancement.js: houseLantern and corrected smoke",
+    "source_code": "scripts/house_art_v9_upgrade.py"
+  }
 }
