@@ -54,7 +54,7 @@ class RecoveryContract(unittest.TestCase):
         self.assertIsNone(self.v9["measurement"]["user_visibility_percent"])
         self.assertEqual(self.r["candidate_v9"]["generated_zip_sha256"],
                          self.v9["generated_candidate"]["zip_sha256"])
-        self.assertEqual(self.s["checkpoint"], 11)
+        self.assertEqual(self.s["checkpoint"], 12)
         self.assertIsNone(self.s["owner_decision"])
     def test_recovery_and_entrypoint_references(self):
         for path in ("README.md","AGENTS.md","docs/RECOVERY_ANY_CHAT_RU.md"):

@@ -1,0 +1,79 @@
+{
+  "source": "Original World V9 ZIP in user's authorized Library",
+  "baseline_v9_zip_sha256": "b493fe88aece2466a13118d8e65c2f220f17b8afd10f3ba0f733945e11b4d624",
+  "derived_v9_house_zip_sha256": "dafd7f692358614226cca5c860b54949acbd70d1a78adb30b1c5e23dcdd6b282",
+  "derived_zip_remote_persistence": false,
+  "asset_sha256": "b874e392d20e6c798c60066c2ae93a165a62908caa1dfdbc275f0a29ace584c7",
+  "reference_comparison_sha256": "3be29673349bc5af71f2050f50d7305bd70a42ce5075716719f2bcadd431b6b0",
+  "browser": "headless Chromium Playwright local set_content with data: sprite URIs due network/file navigation blocking; not a production deployment",
+  "sample_count": 3,
+  "visible_improvement": "house roof/window/door/wall/lantern artwork; reference still substantially richer",
+  "runs": [
+    {
+      "version": "v9before",
+      "width": 1200,
+      "height": 780,
+      "loaded": 44,
+      "total": 44,
+      "observed_fps": 60,
+      "frame_p50_ms": 16.7,
+      "frame_p95_ms": 16.7,
+      "cpu_draw_p50_ms": 1.4,
+      "cpu_draw_p95_ms": 1.9,
+      "movement_px": 37.4,
+      "js_errors": []
+    },
+    {
+      "version": "v9_house",
+      "width": 1200,
+      "height": 780,
+      "loaded": 44,
+      "total": 44,
+      "observed_fps": 60,
+      "frame_p50_ms": 16.7,
+      "frame_p95_ms": 16.8,
+      "cpu_draw_p50_ms": 1.4,
+      "cpu_draw_p95_ms": 2,
+      "movement_px": 37.39,
+      "js_errors": []
+    },
+    {
+      "version": "v9before",
+      "width": 390,
+      "height": 844,
+      "loaded": 44,
+      "total": 44,
+      "observed_fps": 60,
+      "frame_p50_ms": 16.7,
+      "frame_p95_ms": 16.7,
+      "cpu_draw_p50_ms": 0.8,
+      "cpu_draw_p95_ms": 1.2,
+      "movement_px": 39.67,
+      "js_errors": []
+    },
+    {
+      "version": "v9_house",
+      "width": 390,
+      "height": 844,
+      "loaded": 44,
+      "total": 44,
+      "observed_fps": 60,
+      "frame_p50_ms": 16.7,
+      "frame_p95_ms": 16.8,
+      "cpu_draw_p50_ms": 1,
+      "cpu_draw_p95_ms": 1.9,
+      "movement_px": 40.8,
+      "js_errors": []
+    }
+  ],
+  "visibility_score": null,
+  "real_iphone11": null,
+  "owner_decision": null,
+  "known_risks": [
+    "CPU draw p95 increased on emulated mobile: 1.2 to 1.9 ms; optimize before deployment",
+    "Full ZIP not uploaded due container_session_unavailable",
+    "No independently assessed target-reference score or true mobile device benchmark"
+  ],
+  "status": "EXPERIMENTING",
+  "user_decision": null
+}
