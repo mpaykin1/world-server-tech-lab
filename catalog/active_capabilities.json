@@ -4,7 +4,7 @@
   "source_of_truth": "LIVE_STATUS.json",
   "owner_decision": null,
   "production_status": "NOT_INTEGRATED",
-  "last_verified_lab_sha": "f93877b517a9fcd11c1e4148d045f91b294c489c",
+  "last_verified_lab_sha": "8f4d093bf992ec35bbec8c6b3e3cf4356765f541",
   "last_verified_world_master_sha": "754e97829c2dae88424904cafbf44c50ab6b688d",
   "verified_baseline": {
     "experiment": "graphics-terrain-v8",
@@ -155,6 +155,28 @@
       },
       "evidence": "evidence/animation-tech-lab-v1-browser.json",
       "next": "Retest adapter against latest parallel V9 house source and exact reference, optimize animation render cost, never assert full upstream libraries installed."
+    },
+    {
+      "id": "animation-tech-lab-v2",
+      "state": "LAB_VERIFIED",
+      "production_status": "NOT_INTEGRATED",
+      "description": "Exact original V9 scene-art + A1 source preserved; optional gait/cape, per-tree sway, water shimmer and house-smoke Canvas v2 tested with real Chromium screenshots, no new game timer. LAB_VERIFIED means reproducible source+Chromium, NOT user acceptance or reference visual score.",
+      "source": {
+        "location": "github",
+        "path": "scripts/animation-lab-v2.js"
+      },
+      "asset": {
+        "location": "library_zip",
+        "library_path": "/World Server/Graphics Reference/GRAPHICS-DEMO-001-playable-v9-scene-art-animation-v2.zip",
+        "sha256": "ea673cce39bd1abe165e3bde2c9baee593b4b0cacc087b1bea5a199c3e2b8192",
+        "path": "medieval_world_infinite_pack_v3/animation-lab-v2.js"
+      },
+      "test": {
+        "location": "github",
+        "path": "tests/test_animation_lab_v2.py"
+      },
+      "evidence": "experiments/animation-tech-lab-v2.json",
+      "next": "Independent visual score >85% and real iPhone test, optimize draw cost; no production promotion before required review/owner verdict."
     }
   ],
   "planned_v9": [
@@ -195,11 +217,16 @@
       496,
       379
     ],
-    "review_gate": "Never convert BLOCK/INCONCLUSIVE/429 to PASS",
+    "review_gate": "INDEPENDENT BLOCK on all 3 exact candidate heads, no merges; all remain open",
     "actual_50_50_minutes": "UNMEASURED",
     "new_scheduled_tasks": 0,
     "source": "https://github.com/mpaykin1/World_server/issues/80",
-    "last_candidate_fix_sha": "14aa209ab89b194184065d9012cb8cad0c1a8ed1"
+    "last_candidate_fix_sha": "14aa209ab89b194184065d9012cb8cad0c1a8ed1",
+    "last_checked_pr_heads": {
+      "379": "46da9eb367fea2dcdc4b5fa7466ec1dd3b00d609",
+      "491": "7fa01e7e63d74a8b07fb35c36ce01ff6b351a113",
+      "496": "8c9d8ebe998aa160fbeb24c3332ab35b26f5da33"
+    }
   },
   "access_scope": "GitHub readable by any authorized new chat; archive requires this user's Library authorization. Neither is auto-installed into production.",
   "candidate_v9": {
@@ -226,6 +253,16 @@
     "exact_sprite_source": "assets/graphics-v9/house_3d.png",
     "exact_sprite_sha256": "b874e392d20e6c798c60066c2ae93a165a62908caa1dfdbc275f0a29ace584c7",
     "exact_renderer_patch": "scripts/house_runtime_patch_v9.py",
-    "browser_evidence": "experiments/graphics-art-v9-browser.json"
+    "browser_evidence": "experiments/graphics-art-v9-browser.json",
+    "scene_animation_v2": {
+      "persistent_zip_location": "/World Server/Graphics Reference/GRAPHICS-DEMO-001-playable-v9-scene-art-animation-v2.zip",
+      "persistent_evidence_bundle": "/World Server/Graphics Reference/GRAPHICS-DEMO-001-animation-v2-evidence-source.zip",
+      "source_scene_sha256": "63d0a624e7c982b7df2151b0de38b300a393437a21a5f65f78ef5b9935295ef7",
+      "house_png_sha256": "b874e392d20e6c798c60066c2ae93a165a62908caa1dfdbc275f0a29ace584c7",
+      "result_zip_sha256": "ea673cce39bd1abe165e3bde2c9baee593b4b0cacc087b1bea5a199c3e2b8192",
+      "user_visibility_percent": null,
+      "owner_decision": null,
+      "production": false
+    }
   }
 }
