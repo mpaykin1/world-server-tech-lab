@@ -1,0 +1,57 @@
+{
+  "id": "graphics-art-v9-scene-checkpoint14",
+  "baseline_v8_sha256": "419e7dd925f8b60beaeca662c1f19e86553113f4f1572490ffec5137f3beea11",
+  "base_animation_zip_sha256": "58d72dc5e044862fd708d0e7becef0b21c3de11997300e3b1d6d6946b80446eb",
+  "zip_library": "/World Server/Graphics Reference/GRAPHICS-DEMO-001-playable-v9-scene-art-checkpoint13.zip",
+  "zip_sha256": "63d0a624e7c982b7df2151b0de38b300a393437a21a5f65f78ef5b9935295ef7",
+  "source_scripts": [
+    "scripts/house_art_v9_upgrade.py",
+    "scripts/house_runtime_patch_v9.py",
+    "scripts/water-light-v9.js",
+    "scripts/rebuild_v9_scene.py"
+  ],
+  "negative_test": "tests/test_scene_art_v9_contract.py",
+  "same_game_original_map_sha256": "183302c32964f5a43ca7fe7ab4d00c1a8d1d4fe861c8688fbe41c2c9369dec8e",
+  "browser": "headless Chromium on Linux; local in-memory HTML/data URI assets, no production URL",
+  "before_after": [
+    {
+      "size": "1200x780",
+      "original_cpu_draw_ms_median": 1.333,
+      "v9_cpu_draw_ms_median": 1.126,
+      "observed_fps": 60,
+      "loaded_assets": 44,
+      "js_errors": 0,
+      "keyboard_working": true,
+      "water_ripples": 32
+    },
+    {
+      "size": "390x844",
+      "original_cpu_draw_ms_median": 0.627,
+      "v9_cpu_draw_ms_median": 0.764,
+      "observed_fps": 60,
+      "loaded_assets": 44,
+      "js_errors": 0,
+      "keyboard_working": true,
+      "touch_working": true,
+      "water_ripples": 8
+    }
+  ],
+  "visual_score": null,
+  "real_iphone11": null,
+  "owner_decision": null,
+  "actual_50_50_minutes": "UNMEASURED",
+  "clean_server_prs": {
+    "379": "BLOCK",
+    "491": "BLOCK",
+    "496": "BLOCK"
+  },
+  "screenshots_library": {
+    "before_desktop": "/World Server/Graphics Reference/original_animation-anim_a1-1200x780.png",
+    "after_desktop": "/World Server/Graphics Reference/scene_art_v9-candidate_v9-1200x780.png",
+    "before_emulated_mobile": "/World Server/Graphics Reference/original_animation-anim_a1-390x844.png",
+    "after_emulated_mobile": "/World Server/Graphics Reference/scene_art_v9-candidate_v9-390x844.png"
+  },
+  "status": "EXPERIMENTING",
+  "execution_state": "LOCAL_BROWSER_TESTED_NOT_PRODUCTION",
+  "user_decision": null
+}

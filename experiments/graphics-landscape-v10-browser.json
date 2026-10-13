@@ -1,0 +1,233 @@
+{
+  "baseline": "original V9 owner playable snapshot",
+  "candidate": "V10 offline graphical slice same engine",
+  "browser": "Chromium headless Linux",
+  "runs": [
+    {
+      "build": "v9_original",
+      "viewport": [
+        1200,
+        780
+      ],
+      "mobile_emulated": false,
+      "loaded": 44,
+      "total": 44,
+      "js_errors": [],
+      "original_map": "52x28",
+      "blockedTiles": [
+        "water",
+        "cliff"
+      ],
+      "keyboard_dx": 27.2,
+      "touch_dx": null,
+      "draw_cpu_samples_ms": [
+        1.35,
+        1.26,
+        1.289
+      ],
+      "draw_cpu_median_ms": 1.289,
+      "scenes": [
+        {
+          "scene": "village",
+          "screenshot": "v9_original_village_1200x780.png",
+          "landscapeV10": null,
+          "fps_observed": 56,
+          "water_tiles": 80
+        },
+        {
+          "scene": "cliff_route",
+          "screenshot": "v9_original_cliff_route_1200x780.png",
+          "landscapeV10": null,
+          "fps_observed": 57,
+          "water_tiles": 146
+        },
+        {
+          "scene": "holdout_mine",
+          "screenshot": "v9_original_holdout_mine_1200x780.png",
+          "landscapeV10": null,
+          "fps_observed": 58,
+          "water_tiles": 52
+        }
+      ]
+    },
+    {
+      "build": "v9_original",
+      "viewport": [
+        390,
+        844
+      ],
+      "mobile_emulated": true,
+      "loaded": 44,
+      "total": 44,
+      "js_errors": [],
+      "original_map": "52x28",
+      "blockedTiles": [
+        "water",
+        "cliff"
+      ],
+      "keyboard_dx": 27.2,
+      "touch_dx": 24.94,
+      "draw_cpu_samples_ms": [
+        0.747,
+        0.63,
+        0.654
+      ],
+      "draw_cpu_median_ms": 0.654,
+      "scenes": [
+        {
+          "scene": "village",
+          "screenshot": "v9_original_village_390x844.png",
+          "landscapeV10": null,
+          "fps_observed": 59,
+          "water_tiles": 30
+        },
+        {
+          "scene": "cliff_route",
+          "screenshot": "v9_original_cliff_route_390x844.png",
+          "landscapeV10": null,
+          "fps_observed": 59,
+          "water_tiles": 45
+        },
+        {
+          "scene": "holdout_mine",
+          "screenshot": "v9_original_holdout_mine_390x844.png",
+          "landscapeV10": null,
+          "fps_observed": 59,
+          "water_tiles": 30
+        }
+      ]
+    },
+    {
+      "build": "v10_landscape",
+      "viewport": [
+        1200,
+        780
+      ],
+      "mobile_emulated": false,
+      "loaded": 45,
+      "total": 45,
+      "js_errors": [],
+      "original_map": "52x28",
+      "blockedTiles": [
+        "water",
+        "cliff"
+      ],
+      "keyboard_dx": 27.19,
+      "touch_dx": null,
+      "draw_cpu_samples_ms": [
+        1.281,
+        1.156,
+        1.369
+      ],
+      "draw_cpu_median_ms": 1.281,
+      "scenes": [
+        {
+          "scene": "village",
+          "screenshot": "v10_landscape_village_1200x780.png",
+          "landscapeV10": {
+            "flowers": 26,
+            "cliffEdges": 27,
+            "shoreSparkles": 12,
+            "grassTufts": 23
+          },
+          "fps_observed": 57,
+          "water_tiles": 80
+        },
+        {
+          "scene": "cliff_route",
+          "screenshot": "v10_landscape_cliff_route_1200x780.png",
+          "landscapeV10": {
+            "flowers": 12,
+            "cliffEdges": 17,
+            "shoreSparkles": 28,
+            "grassTufts": 12
+          },
+          "fps_observed": 58,
+          "water_tiles": 146
+        },
+        {
+          "scene": "holdout_mine",
+          "screenshot": "v10_landscape_holdout_mine_1200x780.png",
+          "landscapeV10": {
+            "flowers": 3,
+            "cliffEdges": 68,
+            "shoreSparkles": 2,
+            "grassTufts": 18
+          },
+          "fps_observed": 58,
+          "water_tiles": 52
+        }
+      ]
+    },
+    {
+      "build": "v10_landscape",
+      "viewport": [
+        390,
+        844
+      ],
+      "mobile_emulated": true,
+      "loaded": 45,
+      "total": 45,
+      "js_errors": [],
+      "original_map": "52x28",
+      "blockedTiles": [
+        "water",
+        "cliff"
+      ],
+      "keyboard_dx": 27.2,
+      "touch_dx": 24.94,
+      "draw_cpu_samples_ms": [
+        0.741,
+        0.71,
+        0.683
+      ],
+      "draw_cpu_median_ms": 0.71,
+      "scenes": [
+        {
+          "scene": "village",
+          "screenshot": "v10_landscape_village_390x844.png",
+          "landscapeV10": {
+            "flowers": 19,
+            "cliffEdges": 0,
+            "shoreSparkles": 4,
+            "grassTufts": 11
+          },
+          "fps_observed": 59,
+          "water_tiles": 30
+        },
+        {
+          "scene": "cliff_route",
+          "screenshot": "v10_landscape_cliff_route_390x844.png",
+          "landscapeV10": {
+            "flowers": 5,
+            "cliffEdges": 10,
+            "shoreSparkles": 11,
+            "grassTufts": 7
+          },
+          "fps_observed": 59,
+          "water_tiles": 45
+        },
+        {
+          "scene": "holdout_mine",
+          "screenshot": "v10_landscape_holdout_mine_390x844.png",
+          "landscapeV10": {
+            "flowers": 0,
+            "cliffEdges": 20,
+            "shoreSparkles": 0,
+            "grassTufts": 2
+          },
+          "fps_observed": 59,
+          "water_tiles": 30
+        }
+      ]
+    }
+  ],
+  "art_quality_independent_score": null,
+  "actual_iPhone11": false,
+  "public_live_deployment": false,
+  "owner_pass_fail": null,
+  "execution_state": "LOCAL_BROWSER_TESTED_UNSCORED",
+  "status": "EXPERIMENTING",
+  "user_decision": null,
+  "id": "graphics-landscape-v10-browser"
+}

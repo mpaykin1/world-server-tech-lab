@@ -26,3 +26,16 @@ Autotiler 47-mask adapter is available in GitHub Lab scripts/autotiler_47_index.
 - 50% GRAPHICS/50% CLEAN_SERVER productive work target intact; actual ratio UNKNOWN until measured. No sixth automation.
 
 On real output: commit Lab PR, pass CI, merge only if clean, update LIVE_STATUS/history/capability registry and append evidence checkpoint to existing issue #80. Owner PASS/FAIL only after playable MVP. Do not infer all-chat access for another user account lacking project/library permissions.
+
+## CHECKPOINT 17 — V10 ART, ORIGINAL GAME (2026-10-13)
+
+The latest locally browser-tested V10 faceted cliff/meadow/shore slice is **EXPERIMENTAL, NOT production**. No owner PASS/FAIL, no independent 85/100 reference score, no real iPhone11 proof. Do not confuse verified V8 asset adapters in `catalog.implemented` with V10 under `catalog.experimental_capabilities`.
+
+- GitHub source: `scripts/landscape-art-v10.js`, `scripts/paint_cliffs_v10.py`, `scripts/rebuild_v10_landscape.py`, `scripts/browser_verify_v10.py`
+- Exact playable: owner Library `/World Server/Graphics Reference/GRAPHICS-DEMO-001-playable-v10-landscape-checkpoint15.zip` SHA256 `d5ecdbae1a5885799e508d2a72780b3815bb149a67740c43a19ac046b451ad5f`
+- Original baseline Library `GRAPHICS-DEMO-001-playable-v9-scene-art-checkpoint13.zip`, sha `63d0a624e7c982b7df2151b0de38b300a393437a21a5f65f78ef5b9935295ef7`
+- Reproduce: `python scripts/rebuild_v10_landscape.py ORIGINAL_CHECKPOINT14.zip reconstructed-v10.zip`; then extract and run `tools/test_scene_v10.py`. Actual browser evidence and before/after 3 locations are in Library `/World Server/Graphics Reference/` and experiment `experiments/graphics-landscape-v10.json`.
+- Same 52×28 owner map; original Canvas/player/controls, no new renderer. New script and separate atlas are additive. No user visibility threshold proven, no public preview link yet.
+- CLEAN_SERVER: keep existing #491, #496, #379 independent BLOCK. Preserve five hourly agents and required target 50/50 allocation; actual productive minutes still unverified.
+
+Continue from LIVE_STATUS; do not restart from V8 or silently treat the V10 prototype as production.
