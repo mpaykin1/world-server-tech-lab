@@ -69,6 +69,6 @@
     "animation_v2_playable_library": "/World Server/Graphics Reference/GRAPHICS-DEMO-001-playable-v9-scene-art-animation-v2.zip",
     "animation_v2_evidence_library": "/World Server/Graphics Reference/GRAPHICS-DEMO-001-animation-v2-evidence-source.zip",
     "animation_v2_module": "https://github.com/mpaykin1/world-server-tech-lab/blob/ai/chatgpt/v9-scene-animation-v2-checkpoint14/scripts/animation-lab-v2.js",
-    "animation_v2_checkpoint_pr": "PENDING_CREATED"
+    "animation_v2_checkpoint_pr": "https://github.com/mpaykin1/world-server-tech-lab/pull/14"
   }
 }
