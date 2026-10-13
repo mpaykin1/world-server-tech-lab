@@ -158,9 +158,9 @@
     },
     {
       "id": "animation-tech-lab-v2",
-      "state": "LAB_BROWSER_TESTED",
+      "state": "LAB_VERIFIED",
       "production_status": "NOT_INTEGRATED",
-      "description": "Exact original V9 scene-art + A1 source preserved; optional gait/cape, per-tree sway, water shimmer and house-smoke Canvas v2 tested with real Chromium screenshots, no new game timer.",
+      "description": "Exact original V9 scene-art + A1 source preserved; optional gait/cape, per-tree sway, water shimmer and house-smoke Canvas v2 tested with real Chromium screenshots, no new game timer. LAB_VERIFIED means reproducible source+Chromium, NOT user acceptance or reference visual score.",
       "source": {
         "location": "github",
         "path": "scripts/animation-lab-v2.js"

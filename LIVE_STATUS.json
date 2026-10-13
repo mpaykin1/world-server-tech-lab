@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "checkpoint": 14,
-  "updated_at_utc": "2026-10-13T09:27:47.206Z",
+  "updated_at_utc": "2026-10-13T09:30:01.654Z",
   "phase": "EXPERIMENTING",
   "baseline": {
     "lab_main_sha": "8f4d093bf992ec35bbec8c6b3e3cf4356765f541",
@@ -21,7 +21,8 @@
     "No real iPhone11, independent full-reference assessment or stable public deployment; visibility UNKNOWN, user verdict null.",
     "PR #496 same existing branch new regression commit 14aa209ab89b194184065d9012cb8cad0c1a8ed1; CI pending; independent BLOCK not bypassed. #491 and #379 still open. Productive 50/50 minutes UNMEASURED.",
     "V9 scene-art checkpoint13 + A1 animation + additional bounded V2 adapter are now packed together and Library-persisted. Chromium tested desktop and simulated mobile; full independent visual 85/100 and physical iPhone 11 remain UNKNOWN.",
-    "V2 adds measurable render cost (desktop median ~1.8→2.1ms, simulated mobile ~1.1→1.3ms in one paired run). FPS observed roughly 58–60; measurements vary. No unearned quality or performance PASS."
+    "V2 adds measurable render cost (desktop median ~1.8→2.1ms, simulated mobile ~1.1→1.3ms in one paired run). FPS observed roughly 58–60; measurements vary. No unearned quality or performance PASS.",
+    "Lab CI state convention requires LAB_VERIFIED for registered capabilities; this is internal test evidence, never an owner PASS or independent visual acceptance."
   ],
   "active_experiments": [
     "graphics-terrain-v8",
