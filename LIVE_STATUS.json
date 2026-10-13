@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "checkpoint": 15,
-  "updated_at_utc": "2026-10-13T09:36:00Z",
+  "checkpoint": 16,
+  "updated_at_utc": "2026-10-13T11:43:53.331Z",
   "phase": "EXPERIMENTING",
   "baseline": {
     "lab_main_sha": "8f4d093bf992ec35bbec8c6b3e3cf4356765f541",
@@ -28,7 +28,8 @@
     "Checkpoint15 original-game faceted rock/moss/flowers/shore art ZIP persisted in Library with SHA; artistically closer but independent >=85/100 visual fidelity remains UNKNOWN, no live deployment or physical iPhone11 evidence.",
     "Existing World PRs #491, #496 and #379 still require independent review; measured 50/50 productive minutes UNMEASURED.",
     "Lab CI detected prior checkpoint14 invalid experiment status and V10 browser evidence lacking experiment schema; repaired both without promoting visual score or user verdict.",
-    "CI demonstrated earlier experimental capabilities wrongly placed under LAB_VERIFIED; moved to experimental_capabilities. No independent >85 reference proof or actual physical iPhone is claimed."
+    "CI demonstrated earlier experimental capabilities wrongly placed under LAB_VERIFIED; moved to experimental_capabilities. No independent >85 reference proof or actual physical iPhone is claimed.",
+    "Checkpoint16 V11 first artistic asset pass archived and real Chromium tested; independent 85/100 artistic fidelity still UNKNOWN. New pixel-art assets add ~0.2ms median desktop/mobile render cost, physical iPhone11 absent. No public test URL."
   ],
   "active_experiments": [
     "graphics-terrain-v8",
@@ -36,9 +37,10 @@
     "animation-tech-lab-v1",
     "animation-tech-lab-v2",
     "graphics-art-v9-scene-checkpoint14",
-    "graphics-landscape-v10"
+    "graphics-landscape-v10",
+    "graphics-art-v11"
   ],
-  "next_action": "Continue V10 artistic reference matching from pinned playable Library ZIP and lab source scripts, alongside independently browser-tested V2 animations; independently score >85 and real iPhone11. Keep CLEAN_SERVER existing #491/#496/#379 under BLOCK and maintain 50/50 measured effort. No World master write.",
+  "next_action": "Iterate author-level asset variety and whole-world composition against original reference, cost-optimize decals; separately continue World Server CLEAN_SERVER PR review blocks #491/#496/#379; user PASS/FAIL remains null.",
   "owner_decision": null,
   "links": {
     "main_project": "https://github.com/mpaykin1/World_server",
@@ -92,6 +94,9 @@
     "v10_village_comparison_library": "/World Server/Graphics Reference/GRAPHICS-DEMO-001-v9-v10-village-comparison.png",
     "v10_cliff_comparison_library": "/World Server/Graphics Reference/GRAPHICS-DEMO-001-v9-v10-cliff-comparison.png",
     "v10_holdout_comparison_library": "/World Server/Graphics Reference/GRAPHICS-DEMO-001-v9-v10-holdout-comparison.png",
-    "v10_lab_pr": "https://github.com/mpaykin1/world-server-tech-lab/pull/13"
+    "v10_lab_pr": "https://github.com/mpaykin1/world-server-tech-lab/pull/13",
+    "art_v11_playable_library": "/World Server/Graphics Reference/GRAPHICS-DEMO-001-v11-artistic-asset-upgrade.zip",
+    "art_v11_evidence_library": "/World Server/Graphics Reference/GRAPHICS-DEMO-001-v11-real-chromium-evidence.zip",
+    "art_v11_experiment": "https://github.com/mpaykin1/world-server-tech-lab/blob/main/experiments/graphics-art-v11.json"
   }
 }
