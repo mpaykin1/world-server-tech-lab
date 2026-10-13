@@ -17,4 +17,4 @@ Start at [LIVE_STATUS.json](LIVE_STATUS.json), validate exact GitHub state and l
 
 ## New Chat / V9 current work order
 
-Read [V9 EXECUTION BRIEF](docs/V9_EXECUTION_BRIEF_RU.md), [cross-chat recovery](docs/RECOVERY_ANY_CHAT_RU.md) and [VERIFIED capability registry](catalog/active_capabilities.json). V9 artistic improvements are NOT IMPLEMENTED; V8 autotile and spritesheet adapters are lab-only. Current checkpoint in [LIVE_STATUS](LIVE_STATUS.json); owner verdict UNSET and 50/50 actual minutes UNMEASURED. Re-check exact V8(1) Library SHA before work.
+Read [V9 EXECUTION BRIEF](docs/V9_EXECUTION_BRIEF_RU.md), [cross-chat recovery](docs/RECOVERY_ANY_CHAT_RU.md) and [VERIFIED capability registry](catalog/active_capabilities.json). V9 has an isolated local browser-tested house/cliff candidate, not a deployed/persistently hosted playable release. See checkpoint #11 in LIVE_STATUS and its explicit ZIP persistence blocker; V8 autotile/spritesheets remain lab-only. Owner verdict remains null. Current checkpoint in [LIVE_STATUS](LIVE_STATUS.json); owner verdict UNSET and 50/50 actual minutes UNMEASURED. Re-check exact V8(1) Library SHA before work.

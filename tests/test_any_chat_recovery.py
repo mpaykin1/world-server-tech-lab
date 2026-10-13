@@ -40,14 +40,22 @@ class RecoveryContract(unittest.TestCase):
             self.assertTrue(c["next"])
         self.assertGreaterEqual(len(ids),5)
     def test_planned_not_falsely_reported_as_implemented(self):
-        self.assertEqual(self.v9["status"],"NOT_TESTED")
-        self.assertEqual(self.v9["implementation_status"],"NOT_IMPLEMENTED")
+        self.assertEqual(self.v9["status"],"EXPERIMENTING")
+        self.assertEqual(self.v9["implementation_status"],"PARTIAL_LOCAL_BROWSER_TESTED")
         self.assertIsNone(self.v9["user_decision"])
         self.assertIsNone(self.r["owner_decision"])
         self.assertEqual(self.r["production_status"],"NOT_INTEGRATED")
-        self.assertTrue(all(x["state"]=="NOT_IMPLEMENTED" for x in self.r["planned_v9"]))
+        self.assertTrue(all(x["state"] in ("NOT_IMPLEMENTED","PARTIAL_LOCAL_SLICE_UNVERIFIED") for x in self.r["planned_v9"]))
         self.assertEqual(self.s["lane_policy"]["new_scheduled_jobs"],0)
         self.assertEqual((self.s["lane_policy"]["GRAPHICS"],self.s["lane_policy"]["CLEAN_SERVER"]),(50,50))
+    def test_v9_house_code_is_visible_from_future_chats_without_false_verdict(self):
+        self.assertTrue((ROOT/"scripts/house_art_v9_upgrade.py").is_file())
+        self.assertIsNone(self.r["candidate_v9"]["persistent_zip_location"])
+        self.assertIsNone(self.v9["measurement"]["user_visibility_percent"])
+        self.assertEqual(self.r["candidate_v9"]["generated_zip_sha256"],
+                         self.v9["generated_candidate"]["zip_sha256"])
+        self.assertEqual(self.s["checkpoint"], 11)
+        self.assertIsNone(self.s["owner_decision"])
     def test_recovery_and_entrypoint_references(self):
         for path in ("README.md","AGENTS.md","docs/RECOVERY_ANY_CHAT_RU.md"):
             s=(ROOT/path).read_text()
