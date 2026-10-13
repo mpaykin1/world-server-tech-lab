@@ -29,7 +29,7 @@
     "graphics-terrain-v8",
     "graphics-art-v9",
     "animation-tech-lab-v1",
-    "graphics-art-v9-scene",
+    "graphics-art-v9-scene-checkpoint14",
     "graphics-landscape-v10"
   ],
   "next_action": "Rebuild V10 from pinned checkpoint14 ZIP with scripts/rebuild_v10_landscape.py; independently score 85/100 user reference on visible holdout and measure physical iPhone11; protect CLEAN_SERVER existing #491/#496/#379 gates; no World master integration while blocked.",
