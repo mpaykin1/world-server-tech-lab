@@ -1,0 +1,85 @@
+{
+  "id": "ages-isle-evolution-reuse-cycle2",
+  "status": "EXPERIMENTING",
+  "user_decision": null,
+  "user_decision_source": null,
+  "analysis_commit": null,
+  "objective": "Carry forward a user-supplied two-version source evolution into AGES memory; reproduce a genuinely new enemy and weapon through the game's existing FOE/WEAPONS factories and verify the technique without adding a second engine.",
+  "owned_project": "Isle of Dusk — self-contained Three.js game (NOT GRAPHICS-DEMO-001 Canvas medieval world)",
+  "source_evidence": {
+    "primary_sha256": "6856c60e616aa8c1ae8a7292b2e1e7570d663ae287f335623322e3be66e869cd",
+    "evolved_sha256": "fdbda0240b53f49d6e34aa0965531856e31a0154f4a12339e1682d60d5fe5c1f",
+    "analysis": "73->156 named functions, 69 shared names, 48 literally unchanged, 21 changed, 87 added, 4 removed; original WEAPONS/FOE registries independently identified",
+    "method": "node tools/audit.mjs && node tools/test_audit.mjs"
+  },
+  "learned_rule": {
+    "id": "ISLE-REUSE-001",
+    "evidence": "Evolved game has declarative WEAPONS, FOE and shared spawnFoe/updateFoes/updateCombat/takeLoot; source comparison is reproducible on SHA-pinned files.",
+    "desired_reuse": "Extend declarative registries; never clone combat logic, swap renderer or mutate original user-provided sources.",
+    "process_guard": "Source SHA check, single-occurrence anchored patching, AST/function preservation checks and independent QA with natural-spawn E2E rather than debug-only foeNear/sim."
+  },
+  "reuse_cycle": {
+    "builder": "python tools/build_next_cycle.py",
+    "input_sha256": "fdbda0240b53f49d6e34aa0965531856e31a0154f4a12339e1682d60d5fe5c1f",
+    "output_sha256": "42b5f930513535757deb351983d5ec6b976bea7027b661643bf97d1a03b26bd5",
+    "new_enemy": "mistling / Туманный охотник: naturally eligible after 12s in play and one collected coin; shares spawnFoe + updateFoes, 1 active maximum",
+    "new_weapon": "duskblade / Сумеречный клинок: reuses sword sprite + existing melee combat/loot/equip; drops on first mistling defeat",
+    "player_visible": "DESIGNED, NOT BROWSER VERIFIED",
+    "evidence": "tests/fleet_contract.mjs runs independently of the generator: 7 old functions unchanged, JS AST clean, spawn eligibility gate, real killFoe function reward unit, duplicate drop guard, inherited atlas; negative source mutation",
+    "test_result": "LOCAL_TESTED",
+    "natural_e2e_result": "BLOCKED_BROWSER_NETWORK_POLICY",
+    "blocker": "Local headless Chromium refused even localhost with net::ERR_BLOCKED_BY_ADMINISTRATOR; not a code or live-game PASS.",
+    "fleet_independent_verdict": null,
+    "autonomous_agent_decision": "NOT_PROVEN: user explicitly requested this cycle; automatic self-directed planning and next-run reuse require an external future demonstration"
+  },
+  "permanent_artifact": {
+    "library_path": "/World Server/AGES/AGES-Isle-Evolution-Cycle2.zip",
+    "sha256": "5b54a7a1165b03949b6943ef5ef1c377ff30573c802e62e915b99ffd436bf42a",
+    "includes": [
+      "sources/isle_primary.html",
+      "sources/isle_evolved.html",
+      "next_cycle/isle_reuse_candidate.html",
+      "tools/audit.mjs",
+      "tools/test_audit.mjs",
+      "tools/build_next_cycle.py",
+      "tests/fleet_contract.mjs",
+      "tests/browser_smoke.py",
+      "results/EVOLUTION_REPORT_RU.md",
+      "next_cycle/build_provenance.json"
+    ]
+  },
+  "governance": {
+    "World_server_runtime_changes": false,
+    "production_integration": false,
+    "new_scheduled_jobs": 0,
+    "new_external_writer": 0,
+    "external_api_spend": 0,
+    "new_World_server_prs": 0,
+    "lane_policy": "50% CLEAN_SERVER / 50% GRAPHICS-DEMO-001 unchanged; this optional AGES example is not proof of either lane productivity",
+    "owner_verdict": "UNSET",
+    "world_server_open_prs_observed": [
+      379,
+      491,
+      496
+    ],
+    "review_gate": "NO MERGE until real independent Fleet review + CI and owner control; independent BLOCK may not be relabeled"
+  },
+  "status_history": [
+    {
+      "date": "2026-10-14",
+      "event": "SOURCE_DIFF_AUDIT_LOCAL_TESTED",
+      "owner_verdict": null
+    },
+    {
+      "date": "2026-10-14",
+      "event": "REUSED_FOE_WEAPONS_CYCLE_LOCAL_CONTRACT_TESTED",
+      "owner_verdict": null
+    },
+    {
+      "date": "2026-10-14",
+      "event": "LOCAL_CHROMIUM_NETWORK_ADMIN_BLOCK",
+      "owner_verdict": null
+    }
+  ],
+  "next_action": "Run real natural E2E on the exact candidate in an authorized environment, request independent Fleet verdict, fix any reproduced defects, demonstrate unattended subsequent AGES cycle; only then promote status. Do not claim fully autonomous learning."
+}
