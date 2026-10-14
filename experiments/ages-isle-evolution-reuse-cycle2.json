@@ -21,11 +21,11 @@
   "reuse_cycle": {
     "builder": "python tools/build_next_cycle.py",
     "input_sha256": "fdbda0240b53f49d6e34aa0965531856e31a0154f4a12339e1682d60d5fe5c1f",
-    "output_sha256": "42b5f930513535757deb351983d5ec6b976bea7027b661643bf97d1a03b26bd5",
+    "output_sha256": "597d57272c14bead24a450469b0503020762fe21b393a97bb0696e1e90c6b2f6",
     "new_enemy": "mistling / Туманный охотник: naturally eligible after 12s in play and one collected coin; shares spawnFoe + updateFoes, 1 active maximum",
-    "new_weapon": "duskblade / Сумеречный клинок: reuses sword sprite + existing melee combat/loot/equip; drops on first mistling defeat",
+    "new_weapon": "duskblade / Сумеречный клинок: reuses sword sprite + melee combat; actual burn dps=4 for 1.5s is forwarded via meleeSweep; normal loot/equip on mistling death",
     "player_visible": "DESIGNED, NOT BROWSER VERIFIED",
-    "evidence": "tests/fleet_contract.mjs runs independently of the generator: 7 old functions unchanged, JS AST clean, spawn eligibility gate, real killFoe function reward unit, duplicate drop guard, inherited atlas; negative source mutation",
+    "evidence": "tests/fleet_contract.mjs local: 7 old functions unchanged, JS parse, natural eligibility, killFoe drop guard, weapon atlas reuse and modifier-to-meleeSweep implementation guard. Independent Fleet agent/browser verdict still UNSET.",
     "test_result": "LOCAL_TESTED",
     "natural_e2e_result": "BLOCKED_BROWSER_NETWORK_POLICY",
     "blocker": "Local headless Chromium refused even localhost with net::ERR_BLOCKED_BY_ADMINISTRATOR; not a code or live-game PASS.",
@@ -34,7 +34,7 @@
   },
   "permanent_artifact": {
     "library_path": "/World Server/AGES/AGES-Isle-Evolution-Cycle2.zip",
-    "sha256": "5b54a7a1165b03949b6943ef5ef1c377ff30573c802e62e915b99ffd436bf42a",
+    "sha256": "93baae6a5e40a5c514776afb5ff70d1bf012f52948a69c32c163f2ad44c74389",
     "includes": [
       "sources/isle_primary.html",
       "sources/isle_evolved.html",
@@ -79,7 +79,19 @@
       "date": "2026-10-14",
       "event": "LOCAL_CHROMIUM_NETWORK_ADMIN_BLOCK",
       "owner_verdict": null
+    },
+    {
+      "date": "2026-10-14",
+      "event": "PROCESS_GAP_MELEE_FREEZE_CLAIM_FOUND_AND_RUNTIME_CONTRACT_GUARD_ADDED",
+      "owner_verdict": null
     }
   ],
-  "next_action": "Run real natural E2E on the exact candidate in an authorized environment, request independent Fleet verdict, fix any reproduced defects, demonstrate unattended subsequent AGES cycle; only then promote status. Do not claim fully autonomous learning."
+  "next_action": "Run real natural E2E on the exact candidate in an authorized environment, request independent Fleet verdict, fix any reproduced defects, demonstrate unattended subsequent AGES cycle; only then promote status. Do not claim fully autonomous learning.",
+  "method_improvement": {
+    "discovered_defect": "Initial new melee weapon advertised freeze; existing meleeSweep did not forward freeze (only ranged hit pipeline did). Static registry QA missed this.",
+    "correction": "Replace unsupported freeze with already implemented burn: {dps:4,t:1.5}; verify meleeSweep forwards burn: w.burn; negative guard rejects assuming melee freeze.",
+    "proof": "Source inspection of exact user HTML meleeSweep and local tests/fleet_contract.mjs",
+    "user_verdict": null,
+    "independent_fleet_result": null
+  }
 }
